@@ -17,9 +17,22 @@ A clean, responsive mobile application built with Flutter and Dart to track cryp
 * **Local Storage:** `flutter_secure_storage` (AES encryption for Android, Keychain for iOS)
 * **Data Visualization:** `fl_chart`
 
+
+## 🚀 How to run the project
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/emanuele400tt/crypto-tracker-app.git](https://github.com/emanuele400tt/crypto-tracker-app.git)
+2. Install dependencies 
+    ```bash
+    flutter pub get
+3. Run the app 
+    ```bash
+    flutter run
+
 ---
 
-#Descrizione in italiano
+
+# Versione Italiana
 
 Un'applicazione mobile dal design pulito e responsivo, sviluppata con Flutter e Dart per monitorare i mercati delle criptovalute in tempo reale. Questo progetto è stato realizzato come applicazione "vetrina" per mettere in pratica e consolidare le competenze nello sviluppo mobile, con un focus specifico sulla gestione dello stato, la persistenza sicura dei dati e l'integrazione di API REST.
 
@@ -37,3 +50,14 @@ Un'applicazione mobile dal design pulito e responsivo, sviluppata con Flutter e 
 * **API / Networking:** pacchetto `http`
 * **Storage Locale:** `flutter_secure_storage` (Crittografia AES per Android, Keychain per iOS)
 * **Visualizzazione Dati:** `fl_chart`
+
+* ## 🚀 Come lanciare il progetto
+1. Clonare il repository:
+   ```bash
+   git clone [https://github.com/emanuele400tt/crypto-tracker-app.git](https://github.com/emanuele400tt/crypto-tracker-app.git)
+2. Installa le dipendenze 
+    ```bash
+    flutter pub get
+3. Avvia l'app
+    ```bash
+    flutter run
