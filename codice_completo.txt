@@ -1,0 +1,869 @@
+
+
+=== FILE: lib/providers/theme_provider.dart ===
+import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+
+/// Manages the application's theme mode (light or dark).
+/// Persists the user's preference securely using [FlutterSecureStorage].
+class ThemeProvider extends ChangeNotifier {
+  ThemeMode _themeMode = ThemeMode.dark;
+  final _storage = const FlutterSecureStorage();
+  final String _storageKey = 'app_theme_mode';
+
+  /// Returns the current [ThemeMode] of the application.
+  ThemeMode get themeMode => _themeMode;
+
+  /// Returns true if the current theme is [ThemeMode.dark].
+  bool get isDarkMode => _themeMode == ThemeMode.dark;
+
+  ThemeProvider() {
+    _loadTheme();
+  }
+
+  /// Loads the saved theme preference from secure storage.
+  Future<void> _loadTheme() async {
+    final storedTheme = await _storage.read(key: _storageKey);
+    if (storedTheme != null) {
+      _themeMode = storedTheme == 'light' ? ThemeMode.light : ThemeMode.dark;
+      notifyListeners();
+    }
+  }
+
+  /// Toggles between light and dark themes, saves the preference,
+  /// and notifies listeners to rebuild the UI.
+  void toggleTheme() {
+    if (_themeMode == ThemeMode.dark) {
+      _themeMode = ThemeMode.light;
+      _storage.write(key: _storageKey, value: 'light');
+    } else {
+      _themeMode = ThemeMode.dark;
+      _storage.write(key: _storageKey, value: 'dark');
+    }
+    notifyListeners();
+  }
+}
+
+
+=== FILE: lib/providers/favorites_provider.dart ===
+import 'dart:convert';
+import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+
+/// Manages the state of the user's favorite cryptocurrencies.
+/// Utilizes [FlutterSecureStorage] for secure, persistent local storage.
+class FavoritesProvider extends ChangeNotifier {
+  List<String> _favoriteCoins = [];
+
+  final _storage = const FlutterSecureStorage();
+  final String _storageKey = 'favorite_coins_secure';
+
+  List<String> get favoriteCoins => _favoriteCoins;
+
+  FavoritesProvider() {
+    _loadFavorites();
+  }
+
+  /// Loads favorites from secure storage upon initialization.
+  Future<void> _loadFavorites() async {
+    try {
+      final String? storedData = await _storage.read(key: _storageKey);
+
+      if (storedData != null) {
+        List<dynamic> decoded = json.decode(storedData);
+        _favoriteCoins = decoded.cast<String>();
+        notifyListeners();
+      }
+    } catch (e) {
+      debugPrint('Errore nel caricamento dei preferiti: $e');
+    }
+  }
+
+  /// Persists the current favorites list to secure storage.
+  Future<void> _saveFavorites() async {
+    try {
+      final String encodedData = json.encode(_favoriteCoins);
+      await _storage.write(key: _storageKey, value: encodedData);
+    } catch (e) {
+      debugPrint('Errore nel salvataggio dei preferiti: $e');
+    }
+  }
+
+  /// Toggles the favorite status of a specific coin ID.
+  void toggleFavorite(String coinId) {
+    if (_favoriteCoins.contains(coinId)) {
+      _favoriteCoins.remove(coinId);
+    } else {
+      _favoriteCoins.add(coinId);
+    }
+
+    _saveFavorites();
+    notifyListeners();
+  }
+
+  /// Checks if a specific coin ID is currently marked as favorite.
+  bool isFavorite(String coinId) {
+    return _favoriteCoins.contains(coinId);
+  }
+}
+
+
+=== FILE: lib/widgets/crypto_card.dart ===
+import 'package:flutter/material.dart';
+
+class CryptoCard extends StatelessWidget {
+  final String name;
+  final String symbol;
+  final double price;
+  final double changePercentage;
+  final String imageUrl;
+  final bool isFavorite;
+  final VoidCallback onFavoriteToggle;
+  final VoidCallback onTap;
+
+  const CryptoCard({
+    super.key,
+    required this.name,
+    required this.symbol,
+    required this.price,
+    required this.changePercentage,
+    required this.imageUrl,
+    this.isFavorite = false,
+    required this.onFavoriteToggle,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final isPositive = changePercentage >= 0;
+
+    final color = isPositive
+        ? (isDark ? const Color(0xFFDEFF9A) : const Color(0xFF2E7D32))
+        : Colors.redAccent;
+
+    return Card(
+      color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+      margin: const EdgeInsets.only(bottom: 12),
+      elevation: isDark ? 0 : 2,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      child: ListTile(
+        onTap: onTap,
+        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+        leading: Hero(
+          tag: symbol,
+          child: CircleAvatar(
+            backgroundColor: Colors.transparent,
+            backgroundImage: NetworkImage(imageUrl),
+          ),
+        ),
+        title: Text(
+          name,
+          style: TextStyle(
+            color: Theme.of(context).textTheme.bodyLarge?.color,
+            fontWeight: FontWeight.bold,
+          ),
+          overflow: TextOverflow.ellipsis,
+        ),
+        subtitle: Text(
+          symbol,
+          style: TextStyle(color: isDark ? Colors.white54 : Colors.black45),
+        ),
+        trailing: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            GestureDetector(
+              onTap: onFavoriteToggle,
+              child: Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Icon(
+                  isFavorite ? Icons.favorite : Icons.favorite_border,
+                  color: isFavorite ? Colors.redAccent : Colors.grey,
+                  size: 22,
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
+            SizedBox(
+              width: 100,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Text(
+                    '€ ${price.toStringAsFixed(2)}',
+                    style: TextStyle(
+                      color: Theme.of(context).textTheme.bodyLarge?.color,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  Text(
+                    '${isPositive ? '+' : ''}${changePercentage.toStringAsFixed(2)}%',
+                    style: TextStyle(color: color, fontWeight: FontWeight.w600),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+=== FILE: lib/models/coin_model.dart ===
+/// Represents a cryptocurrency coin with its market data.
+class CoinModel {
+  final String id;
+  final String name;
+  final String symbol;
+  final double currentPrice;
+  final double priceChangePercentage24h;
+  final String imageUrl;
+
+  CoinModel({
+    required this.id,
+    required this.name,
+    required this.symbol,
+    required this.currentPrice,
+    required this.priceChangePercentage24h,
+    required this.imageUrl,
+  });
+
+  /// Creates a [CoinModel] instance from a JSON map provided by the CoinGecko API.
+  factory CoinModel.fromJson(Map<String, dynamic> json) {
+    return CoinModel(
+      id: json['id'] ?? '',
+      name: json['name'] ?? '',
+      symbol: json['symbol']?.toString().toUpperCase() ?? '',
+      currentPrice: (json['current_price'] ?? 0).toDouble(),
+      priceChangePercentage24h: (json['price_change_percentage_24h'] ?? 0)
+          .toDouble(),
+      imageUrl: json['image'] ?? '',
+    );
+  }
+}
+
+
+=== FILE: lib/services/api_service.dart ===
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import '../models/coin_model.dart';
+
+/// Handles network requests to the CoinGecko API.
+class ApiService {
+  static const String _baseUrl = 'https://api.coingecko.com/api/v3';
+
+  /// Fetches the top 10 cryptocurrencies by market capitalization in EUR.
+  ///
+  /// Returns a [List] of [CoinModel]. Throws an [Exception] if the network request fails.
+  Future<List<CoinModel>> getTopCoins() async {
+    final url = Uri.parse(
+      '$_baseUrl/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=10&page=1&sparkline=false',
+    );
+
+    try {
+      final response = await http.get(url);
+
+      if (response.statusCode == 200) {
+        List<dynamic> jsonList = json.decode(response.body);
+        return jsonList
+            .map((jsonItem) => CoinModel.fromJson(jsonItem))
+            .toList();
+      } else {
+        throw Exception('Errore del server: ${response.statusCode}');
+      }
+    } catch (e) {
+      throw Exception('Errore di connessione: $e');
+    }
+  }
+}
+
+
+=== FILE: lib/main.dart ===
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'screens/home_screen.dart';
+import 'providers/favorites_provider.dart';
+import 'providers/theme_provider.dart';
+
+void main() {
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => FavoritesProvider()),
+        ChangeNotifierProvider(create: (context) => ThemeProvider()),
+      ],
+      child: const MyApp(),
+    ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final themeProvider = context.watch<ThemeProvider>();
+
+    return MaterialApp(
+      title: 'Crypto Tracker',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.light,
+        scaffoldBackgroundColor: const Color(0xFFF5F6FA),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFFF5F6FA),
+          foregroundColor: Colors.black87,
+          elevation: 0,
+        ),
+        useMaterial3: true,
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: const Color(0xFF121212),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF121212),
+          foregroundColor: Colors.white,
+          elevation: 0,
+        ),
+        useMaterial3: true,
+      ),
+      themeMode: themeProvider.themeMode,
+      home: const HomeScreen(),
+    );
+  }
+}
+
+
+=== FILE: lib/screens/home_screen.dart ===
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../widgets/crypto_card.dart';
+import '../services/api_service.dart';
+import '../models/coin_model.dart';
+import '../providers/favorites_provider.dart';
+import '../providers/theme_provider.dart';
+import 'favorites_screen.dart';
+import 'detail_screen.dart';
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  final ApiService _apiService = ApiService();
+  late Future<List<CoinModel>> _cryptoFuture;
+  String _searchQuery = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _cryptoFuture = _apiService.getTopCoins();
+  }
+
+  Future<void> _refreshData() async {
+    setState(() {
+      _cryptoFuture = _apiService.getTopCoins();
+    });
+    await _cryptoFuture;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final themeProvider = context.watch<ThemeProvider>();
+    final isDark = themeProvider.isDarkMode;
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Crypto Tracker',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.favorite, color: Colors.redAccent),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const FavoritesScreen(),
+                ),
+              );
+            },
+          ),
+          IconButton(
+            icon: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 400),
+              transitionBuilder: (Widget child, Animation<double> animation) {
+                return RotationTransition(
+                  turns: animation,
+                  child: FadeTransition(opacity: animation, child: child),
+                );
+              },
+              child: Icon(
+                isDark ? Icons.light_mode : Icons.dark_mode,
+                key: ValueKey<bool>(isDark),
+                color: isDark ? const Color(0xFFDEFF9A) : Colors.amber,
+              ),
+            ),
+            onPressed: () {
+              context.read<ThemeProvider>().toggleTheme();
+            },
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.refresh,
+              color: isDark ? const Color(0xFFDEFF9A) : Colors.blueAccent,
+            ),
+            onPressed: _refreshData,
+          ),
+        ],
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Andamento Mercato (Top 10)',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Theme.of(context).textTheme.bodyLarge?.color,
+              ),
+            ),
+            const SizedBox(height: 16),
+            TextField(
+              style: TextStyle(
+                color: Theme.of(context).textTheme.bodyLarge?.color,
+              ),
+              decoration: InputDecoration(
+                hintText: 'Cerca per nome o simbolo...',
+                hintStyle: TextStyle(
+                  color: isDark ? Colors.white54 : Colors.black54,
+                ),
+                prefixIcon: Icon(
+                  Icons.search,
+                  color: isDark ? Colors.white54 : Colors.black54,
+                ),
+                filled: true,
+                fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: BorderSide.none,
+                ),
+              ),
+              onChanged: (value) {
+                setState(() {
+                  _searchQuery = value;
+                });
+              },
+            ),
+            const SizedBox(height: 16),
+            Expanded(
+              child: FutureBuilder<List<CoinModel>>(
+                future: _cryptoFuture,
+                builder: (context, snapshot) {
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return Center(
+                      child: CircularProgressIndicator(
+                        color: isDark
+                            ? const Color(0xFFDEFF9A)
+                            : Colors.blueAccent,
+                      ),
+                    );
+                  } else if (snapshot.hasError) {
+                    return Center(
+                      child: Text(
+                        'Errore: ${snapshot.error}',
+                        style: const TextStyle(color: Colors.redAccent),
+                      ),
+                    );
+                  } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
+                    return const Center(child: Text('Nessuna moneta trovata.'));
+                  }
+
+                  final coins = snapshot.data!;
+                  final filteredCoins = _searchQuery.isEmpty
+                      ? coins
+                      : coins.where((coin) {
+                          final query = _searchQuery.toLowerCase();
+                          return coin.name.toLowerCase().contains(query) ||
+                              coin.symbol.toLowerCase().contains(query);
+                        }).toList();
+
+                  return RefreshIndicator(
+                    color: isDark ? const Color(0xFF121212) : Colors.white,
+                    backgroundColor: isDark
+                        ? const Color(0xFFDEFF9A)
+                        : Colors.blueAccent,
+                    onRefresh: _refreshData,
+                    child: filteredCoins.isEmpty
+                        ? ListView(
+                            physics: const AlwaysScrollableScrollPhysics(),
+                            children: [
+                              const SizedBox(height: 50),
+                              Center(
+                                child: Text(
+                                  'Nessuna moneta trovata per "$_searchQuery"',
+                                  style: TextStyle(
+                                    color: isDark
+                                        ? Colors.white70
+                                        : Colors.black54,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          )
+                        : ListView.builder(
+                            physics: const AlwaysScrollableScrollPhysics(),
+                            itemCount: filteredCoins.length,
+                            itemBuilder: (context, index) {
+                              final coin = filteredCoins[index];
+                              final isFav = context
+                                  .watch<FavoritesProvider>()
+                                  .isFavorite(coin.id);
+
+                              return CryptoCard(
+                                name: coin.name,
+                                symbol: coin.symbol,
+                                price: coin.currentPrice,
+                                changePercentage: coin.priceChangePercentage24h,
+                                imageUrl: coin.imageUrl,
+                                isFavorite: isFav,
+                                onFavoriteToggle: () {
+                                  context
+                                      .read<FavoritesProvider>()
+                                      .toggleFavorite(coin.id);
+                                },
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    PageRouteBuilder(
+                                      transitionDuration: const Duration(
+                                        milliseconds: 400,
+                                      ),
+                                      reverseTransitionDuration: const Duration(
+                                        milliseconds: 400,
+                                      ),
+                                      pageBuilder:
+                                          (
+                                            context,
+                                            animation,
+                                            secondaryAnimation,
+                                          ) => DetailScreen(coin: coin),
+                                      transitionsBuilder:
+                                          (
+                                            context,
+                                            animation,
+                                            secondaryAnimation,
+                                            child,
+                                          ) {
+                                            return FadeTransition(
+                                              opacity: animation,
+                                              child: child,
+                                            );
+                                          },
+                                    ),
+                                  );
+                                },
+                              );
+                            },
+                          ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+=== FILE: lib/screens/detail_screen.dart ===
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:fl_chart/fl_chart.dart';
+import '../models/coin_model.dart';
+import '../providers/favorites_provider.dart';
+
+class DetailScreen extends StatelessWidget {
+  final CoinModel coin;
+
+  const DetailScreen({super.key, required this.coin});
+
+  @override
+  Widget build(BuildContext context) {
+    final isFavorite = context.watch<FavoritesProvider>().isFavorite(coin.id);
+
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final isPositive = coin.priceChangePercentage24h >= 0;
+
+    final color = isPositive
+        ? (isDark ? const Color(0xFFDEFF9A) : const Color(0xFF2E7D32))
+        : (isDark ? Colors.redAccent : Colors.red);
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          coin.name,
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(
+              isFavorite ? Icons.favorite : Icons.favorite_border,
+              color: isFavorite
+                  ? Colors.redAccent
+                  : (isDark ? Colors.white : Colors.black87),
+            ),
+            onPressed: () {
+              context.read<FavoritesProvider>().toggleFavorite(coin.id);
+            },
+          ),
+        ],
+      ),
+      body: SizedBox(
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const SizedBox(height: 20),
+            Hero(
+              tag: coin.symbol,
+              child: CircleAvatar(
+                radius: 40,
+                backgroundColor: Colors.transparent,
+                backgroundImage: NetworkImage(coin.imageUrl),
+              ),
+            ),
+            const SizedBox(height: 16),
+            Text(
+              coin.symbol.toUpperCase(),
+              style: TextStyle(
+                fontSize: 20,
+                color: isDark ? Colors.white54 : Colors.black54,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              '€ ${coin.currentPrice.toStringAsFixed(2)}',
+              style: TextStyle(
+                fontSize: 48,
+                fontWeight: FontWeight.w900,
+                color: Theme.of(context).textTheme.bodyLarge?.color,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              decoration: BoxDecoration(
+                color: color.withValues(alpha: 0.2),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Text(
+                '${isPositive ? '+' : ''}${coin.priceChangePercentage24h.toStringAsFixed(2)}% nelle ultime 24h',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: color,
+                ),
+              ),
+            ),
+
+            const Spacer(),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 0),
+              child: SizedBox(
+                height: 250,
+                child: LineChart(
+                  LineChartData(
+                    gridData: const FlGridData(show: false),
+                    titlesData: const FlTitlesData(show: false),
+                    borderData: FlBorderData(show: false),
+                    lineTouchData: const LineTouchData(enabled: false),
+                    lineBarsData: [
+                      LineChartBarData(
+                        spots: [
+                          const FlSpot(0, 1),
+                          const FlSpot(1, 1.5),
+                          const FlSpot(2, 1.2),
+                          const FlSpot(3, 2.8),
+                          const FlSpot(4, 2.0),
+                          const FlSpot(5, 2.4),
+                          const FlSpot(6, 1.9),
+                          FlSpot(7, isPositive ? 3.5 : 0.5),
+                        ],
+                        isCurved: true,
+                        color: color,
+                        barWidth: 4,
+                        isStrokeCapRound: true,
+                        dotData: const FlDotData(show: false),
+                        belowBarData: BarAreaData(
+                          show: true,
+                          gradient: LinearGradient(
+                            colors: [
+                              color.withValues(alpha: 0.4),
+                              color.withValues(alpha: 0.0),
+                            ],
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+=== FILE: lib/screens/favorites_screen.dart ===
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../models/coin_model.dart';
+import '../providers/favorites_provider.dart';
+import '../services/api_service.dart';
+import '../widgets/crypto_card.dart';
+import 'detail_screen.dart';
+
+class FavoritesScreen extends StatefulWidget {
+  const FavoritesScreen({super.key});
+
+  @override
+  State<FavoritesScreen> createState() => _FavoritesScreenState();
+}
+
+class _FavoritesScreenState extends State<FavoritesScreen> {
+  final ApiService _apiService = ApiService();
+  late Future<List<CoinModel>> _cryptoFuture;
+
+  @override
+  void initState() {
+    super.initState();
+    _cryptoFuture = _apiService.getTopCoins();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final favoritesProvider = context.watch<FavoritesProvider>();
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'La mia Watchlist',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
+      body: FutureBuilder<List<CoinModel>>(
+        future: _cryptoFuture,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(
+              child: CircularProgressIndicator(
+                color: isDark ? const Color(0xFFDEFF9A) : Colors.blueAccent,
+              ),
+            );
+          } else if (snapshot.hasError) {
+            return Center(
+              child: Text(
+                'Errore: ${snapshot.error}',
+                style: const TextStyle(color: Colors.redAccent),
+              ),
+            );
+          } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
+            return const Center(child: Text('Nessuna moneta trovata.'));
+          }
+
+          final allCoins = snapshot.data!;
+
+          final favoriteCoins = allCoins.where((coin) {
+            return favoritesProvider.isFavorite(coin.id);
+          }).toList();
+
+          if (favoriteCoins.isEmpty) {
+            return Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.favorite_border,
+                    size: 80,
+                    color: isDark ? Colors.white24 : Colors.black12,
+                  ),
+                  const SizedBox(height: 16),
+                  Text(
+                    'Nessuna moneta nei preferiti.',
+                    style: TextStyle(
+                      color: isDark ? Colors.white54 : Colors.black54,
+                      fontSize: 18,
+                    ),
+                  ),
+                ],
+              ),
+            );
+          }
+
+          return ListView.builder(
+            padding: const EdgeInsets.all(16.0),
+            itemCount: favoriteCoins.length,
+            itemBuilder: (context, index) {
+              final coin = favoriteCoins[index];
+              return CryptoCard(
+                name: coin.name,
+                symbol: coin.symbol,
+                price: coin.currentPrice,
+                changePercentage: coin.priceChangePercentage24h,
+                imageUrl: coin.imageUrl,
+                isFavorite: true,
+                onFavoriteToggle: () {
+                  favoritesProvider.toggleFavorite(coin.id);
+                },
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    PageRouteBuilder(
+                      transitionDuration: const Duration(milliseconds: 400),
+                      reverseTransitionDuration: const Duration(
+                        milliseconds: 400,
+                      ),
+                      pageBuilder: (context, animation, secondaryAnimation) =>
+                          DetailScreen(coin: coin),
+                      transitionsBuilder:
+                          (context, animation, secondaryAnimation, child) {
+                            return FadeTransition(
+                              opacity: animation,
+                              child: child,
+                            );
+                          },
+                    ),
+                  );
+                },
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
+}

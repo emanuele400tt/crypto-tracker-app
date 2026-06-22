@@ -1,0 +1,2053 @@
+[   +7 ms] executing: uname -m
+[   +3 ms] Exit code 0 from: uname -m
+[        ] x86_64
+[   +5 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[        ] executing: [/home/emanuele/sviluppo/flutter/] git -c log.showSignature=false log HEAD -n 1 --pretty=format:%ad --date=iso
+[   +3 ms] Exit code 0 from: git -c log.showSignature=false log HEAD -n 1 --pretty=format:%ad --date=iso
+[        ] 2026-05-29 12:13:22 -0400
+[  +15 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +22 ms] executing: /home/emanuele/Android/Sdk/platform-tools/adb devices -l
+[  +15 ms] List of devices attached
+           36151FDH2001R4         device usb:3-2 product:panther model:Pixel_7 device:panther transport_id:2
+[   +2 ms] /home/emanuele/Android/Sdk/platform-tools/adb -s 36151FDH2001R4 shell getprop
+[  +61 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +62 ms] Skipping pub get: version match.
+[  +36 ms] Found plugin flutter_secure_storage at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage-9.2.4/
+[   +4 ms] Found plugin flutter_secure_storage_windows at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_windows-3.1.2/
+[   +6 ms] Found plugin path_provider at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider-2.1.5/
+[   +1 ms] Found plugin path_provider_windows at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0/
+[   +3 ms] Found plugin path_provider_linux at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+[   +2 ms] Found plugin path_provider_foundation at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_foundation-2.6.0/
+[   +7 ms] Found plugin path_provider_android at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_android-2.3.1/
+[   +1 ms] Found plugin jni_flutter at /home/emanuele/.pub-cache/hosted/pub.dev/jni_flutter-1.0.1/
+[   +1 ms] Found plugin jni at /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/
+[   +2 ms] Found plugin flutter_secure_storage_web at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_web-1.2.1/
+[   +2 ms] Found plugin flutter_secure_storage_macos at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.3/
+[   +1 ms] Found plugin flutter_secure_storage_linux at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_linux-1.2.3/
+[  +61 ms] Found plugin flutter_secure_storage at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage-9.2.4/
+[   +1 ms] Found plugin flutter_secure_storage_windows at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_windows-3.1.2/
+[   +3 ms] Found plugin path_provider at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider-2.1.5/
+[        ] Found plugin path_provider_windows at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0/
+[   +2 ms] Found plugin path_provider_linux at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+[   +1 ms] Found plugin path_provider_foundation at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_foundation-2.6.0/
+[   +6 ms] Found plugin path_provider_android at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_android-2.3.1/
+[        ] Found plugin jni_flutter at /home/emanuele/.pub-cache/hosted/pub.dev/jni_flutter-1.0.1/
+[        ] Found plugin jni at /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/
+[   +1 ms] Found plugin flutter_secure_storage_web at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_web-1.2.1/
+[   +1 ms] Found plugin flutter_secure_storage_macos at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.3/
+[        ] Found plugin flutter_secure_storage_linux at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_linux-1.2.3/
+[   +9 ms] Skipping generating web_plugin_registrant.dart because it is up-to-date.
+[  +12 ms] Found plugin flutter_secure_storage at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage-9.2.4/
+[        ] Found plugin flutter_secure_storage_windows at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_windows-3.1.2/
+[   +1 ms] Found plugin path_provider at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider-2.1.5/
+[        ] Found plugin path_provider_windows at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0/
+[   +1 ms] Found plugin path_provider_linux at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+[   +1 ms] Found plugin path_provider_foundation at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_foundation-2.6.0/
+[   +3 ms] Found plugin path_provider_android at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_android-2.3.1/
+[        ] Found plugin jni_flutter at /home/emanuele/.pub-cache/hosted/pub.dev/jni_flutter-1.0.1/
+[        ] Found plugin jni at /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/
+[   +2 ms] Found plugin flutter_secure_storage_web at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_web-1.2.1/
+[   +1 ms] Found plugin flutter_secure_storage_macos at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.3/
+[        ] Found plugin flutter_secure_storage_linux at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_linux-1.2.3/
+[   +3 ms] Generating /home/emanuele/flutter/crypto_tracker/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+[        ] Skipping generating GeneratedPluginRegistrant.java because it is up-to-date.
+[   +3 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[        ] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[        ] Skipping generating generated_plugins.cmake because it is up-to-date.
+[   +1 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[        ] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[        ] Skipping generating generated_plugins.cmake because it is up-to-date.
+[   +2 ms] Skipping generating GeneratedPluginRegistrant.h because it is up-to-date.
+[   +1 ms] Skipping generating GeneratedPluginRegistrant.m because it is up-to-date.
+[   +1 ms] Skipping generating GeneratedPluginRegistrant.swift because it is up-to-date.
+[  +19 ms] ro.hardware = panther
+[        ] ro.build.characteristics = nosdcard
+[  +29 ms] Initializing file store
+[   +6 ms] Skipping target: gen_localizations
+[   +1 ms] gen_dart_plugin_registrant: Starting due to {InvalidatedReasonKind.inputChanged: The following inputs have updated contents: /home/emanuele/flutter/crypto_tracker/.dart_tool/package_config.json,/home/emanuele/flutter/crypto_tracker/.dart_tool/flutter_build/dart_plugin_registrant.dart}
+[  +17 ms] Found plugin flutter_secure_storage at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage-9.2.4/
+[        ] Found plugin flutter_secure_storage_windows at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_windows-3.1.2/
+[   +1 ms] Found plugin path_provider at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider-2.1.5/
+[        ] Found plugin path_provider_windows at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0/
+[   +1 ms] Found plugin path_provider_linux at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+[   +1 ms] Found plugin path_provider_foundation at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_foundation-2.6.0/
+[   +3 ms] Found plugin path_provider_android at /home/emanuele/.pub-cache/hosted/pub.dev/path_provider_android-2.3.1/
+[        ] Found plugin jni_flutter at /home/emanuele/.pub-cache/hosted/pub.dev/jni_flutter-1.0.1/
+[   +4 ms] Found plugin jni at /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/
+[   +1 ms] Found plugin flutter_secure_storage_web at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_web-1.2.1/
+[        ] Found plugin flutter_secure_storage_macos at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.3/
+[        ] Found plugin flutter_secure_storage_linux at /home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage_linux-1.2.3/
+[   +6 ms] Skipping generating dart_plugin_registrant.dart because it is up-to-date.
+[        ] gen_dart_plugin_registrant: Complete
+[   +1 ms] Skipping target: _composite
+[   +1 ms] complete
+[   +2 ms] Launching lib/main.dart on Pixel 7 in debug mode...
+[   +3 ms] /home/emanuele/sviluppo/flutter/bin/cache/dart-sdk/bin/dartaotruntime /home/emanuele/sviluppo/flutter/bin/cache/dart-sdk/bin/snapshots/frontend_server_aot.dart.snapshot --sdk-root /home/emanuele/sviluppo/flutter/bin/cache/artifacts/engine/common/flutter_patched_sdk/ --incremental --target=flutter --experimental-emit-debug-metadata -DFLUTTER_VERSION=3.44.1 -DFLUTTER_CHANNEL=stable -DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=924134a44c -DFLUTTER_ENGINE_REVISION=c416acfeb8 -DFLUTTER_DART_VERSION=3.12.1 --output-dill /tmp/flutter_tools.RXQPCR/flutter_tool.GFXSJV/app.dill --packages /home/emanuele/flutter/crypto_tracker/.dart_tool/package_config.json -Ddart.vm.profile=false -Ddart.vm.product=false --enable-asserts --track-widget-creation --filesystem-scheme org-dartlang-root --initialize-from-dill build/0ea6338a9744699c4765127c07d5f7ae.cache.dill.track.dill --source file:///home/emanuele/flutter/crypto_tracker/.dart_tool/flutter_build/dart_plugin_registrant.dart --source package:flutter/src/dart_plugin_registrant.dart -Dflutter.dart_plugin_registrant=file:///home/emanuele/flutter/crypto_tracker/.dart_tool/flutter_build/dart_plugin_registrant.dart --verbosity=error --enable-experiment=alternative-invalidation-strategy
+[   +4 ms] executing: /home/emanuele/Android/Sdk/build-tools/36.1.0/aapt dump xmltree /home/emanuele/flutter/crypto_tracker/build/app/outputs/flutter-apk/app-debug.apk AndroidManifest.xml
+[   +5 ms] Exit code 0 from: /home/emanuele/Android/Sdk/build-tools/36.1.0/aapt dump xmltree /home/emanuele/flutter/crypto_tracker/build/app/outputs/flutter-apk/app-debug.apk AndroidManifest.xml
+[        ] N: android=http://schemas.android.com/apk/res/android
+             E: manifest (line=2)
+               A: android:versionCode(0x0101021b)=(type 0x10)0x1
+               A: android:versionName(0x0101021c)="1.0.0" (Raw: "1.0.0")
+               A: android:compileSdkVersion(0x01010572)=(type 0x10)0x24
+               A: android:compileSdkVersionCodename(0x01010573)="16" (Raw: "16")
+               A: package="com.example.crypto_tracker" (Raw: "com.example.crypto_tracker")
+               A: platformBuildVersionCode=(type 0x10)0x24
+               A: platformBuildVersionName=(type 0x10)0x10
+               E: uses-sdk (line=7)
+                 A: android:minSdkVersion(0x0101020c)=(type 0x10)0x18
+                 A: android:targetSdkVersion(0x01010270)=(type 0x10)0x24
+               E: uses-permission (line=15)
+                 A: android:name(0x01010003)="android.permission.INTERNET" (Raw: "android.permission.INTERNET")
+               E: queries (line=23)
+                 E: intent (line=24)
+                   E: action (line=25)
+                     A: android:name(0x01010003)="android.intent.action.PROCESS_TEXT" (Raw: "android.intent.action.PROCESS_TEXT")
+                   E: data (line=27)
+                     A: android:mimeType(0x01010026)="text/plain" (Raw: "text/plain")
+               E: permission (line=31)
+                 A: android:name(0x01010003)="com.example.crypto_tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" (Raw: "com.example.crypto_tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION")
+                 A: android:protectionLevel(0x01010009)=(type 0x11)0x2
+               E: uses-permission (line=35)
+                 A: android:name(0x01010003)="com.example.crypto_tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" (Raw: "com.example.crypto_tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION")
+               E: application (line=37)
+                 A: android:label(0x01010001)="crypto_tracker" (Raw: "crypto_tracker")
+                 A: android:icon(0x01010002)=@0x7f0a0000
+                 A: android:name(0x01010003)="android.app.Application" (Raw: "android.app.Application")
+                 A: android:debuggable(0x0101000f)=(type 0x12)0xffffffff
+                 A: android:extractNativeLibs(0x010104ea)=(type 0x12)0x0
+                 A: android:appComponentFactory(0x0101057a)="androidx.core.app.CoreComponentFactory" (Raw: "androidx.core.app.CoreComponentFactory")
+                 E: activity (line=44)
+                   A: android:theme(0x01010000)=@0x7f0c0000
+                   A: android:name(0x01010003)="com.example.crypto_tracker.MainActivity" (Raw: "com.example.crypto_tracker.MainActivity")
+                   A: android:exported(0x01010010)=(type 0x12)0xffffffff
+                   A: android:taskAffinity(0x01010012)="" (Raw: "")
+                   A: android:launchMode(0x0101001d)=(type 0x10)0x1
+                   A: android:configChanges(0x0101001f)=(type 0x11)0x40003fb4
+                   A: android:windowSoftInputMode(0x0101022b)=(type 0x11)0x10
+                   A: android:hardwareAccelerated(0x010102d3)=(type 0x12)0xffffffff
+                   E: meta-data (line=60)
+                     A: android:name(0x01010003)="io.flutter.embedding.android.NormalTheme" (Raw: "io.flutter.embedding.android.NormalTheme")
+                     A: android:resource(0x01010025)=@0x7f0c0001
+                   E: intent-filter (line=64)
+                     E: action (line=65)
+                       A: android:name(0x01010003)="android.intent.action.MAIN" (Raw: "android.intent.action.MAIN")
+                     E: category (line=67)
+                       A: android:name(0x01010003)="android.intent.category.LAUNCHER" (Raw: "android.intent.category.LAUNCHER")
+                 E: meta-data (line=74)
+                   A: android:name(0x01010003)="flutterEmbedding" (Raw: "flutterEmbedding")
+                   A: android:value(0x01010024)=(type 0x10)0x2
+                 E: uses-library (line=78)
+                   A: android:name(0x01010003)="androidx.window.extensions" (Raw: "androidx.window.extensions")
+                   A: android:required(0x0101028e)=(type 0x12)0x0
+                 E: uses-library (line=81)
+                   A: android:name(0x01010003)="androidx.window.sidecar" (Raw: "androidx.window.sidecar")
+                   A: android:required(0x0101028e)=(type 0x12)0x0
+                 E: provider (line=85)
+                   A: android:name(0x01010003)="androidx.startup.InitializationProvider" (Raw: "androidx.startup.InitializationProvider")
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                   A: android:authorities(0x01010018)="com.example.crypto_tracker.androidx-startup" (Raw: "com.example.crypto_tracker.androidx-startup")
+                   E: meta-data (line=89)
+                     A: android:name(0x01010003)="androidx.lifecycle.ProcessLifecycleInitializer" (Raw: "androidx.lifecycle.ProcessLifecycleInitializer")
+                     A: android:value(0x01010024)="androidx.startup" (Raw: "androidx.startup")
+                   E: meta-data (line=92)
+                     A: android:name(0x01010003)="androidx.profileinstaller.ProfileInstallerInitializer" (Raw: "androidx.profileinstaller.ProfileInstallerInitializer")
+                     A: android:value(0x01010024)="androidx.startup" (Raw: "androidx.startup")
+                 E: receiver (line=97)
+                   A: android:name(0x01010003)="androidx.profileinstaller.ProfileInstallReceiver" (Raw: "androidx.profileinstaller.ProfileInstallReceiver")
+                   A: android:permission(0x01010006)="android.permission.DUMP" (Raw: "android.permission.DUMP")
+                   A: android:enabled(0x0101000e)=(type 0x12)0xffffffff
+                   A: android:exported(0x01010010)=(type 0x12)0xffffffff
+                   A: android:directBootAware(0x01010505)=(type 0x12)0x0
+                   E: intent-filter (line=103)
+                     E: action (line=104)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.INSTALL_PROFILE" (Raw: "androidx.profileinstaller.action.INSTALL_PROFILE")
+                   E: intent-filter (line=106)
+                     E: action (line=107)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.SKIP_FILE" (Raw: "androidx.profileinstaller.action.SKIP_FILE")
+                   E: intent-filter (line=109)
+                     E: action (line=110)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.SAVE_PROFILE" (Raw: "androidx.profileinstaller.action.SAVE_PROFILE")
+                   E: intent-filter (line=112)
+                     E: action (line=113)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.BENCHMARK_OPERATION" (Raw: "androidx.profileinstaller.action.BENCHMARK_OPERATION")
+[   +4 ms] executing: /home/emanuele/Android/Sdk/platform-tools/adb -s 36151FDH2001R4 shell -x logcat -v time -t 1
+[   +7 ms] <- compile package:crypto_tracker/main.dart
+[ +200 ms] --------- beginning of main
+           06-05 13:18:46.453 W/adbd    ( 1235): timeout expired while flushing socket, closing
+[   +7 ms] executing: /home/emanuele/Android/Sdk/platform-tools/adb version
+[   +5 ms] Android Debug Bridge version 1.0.41
+           Version 37.0.0-14910828
+           Installed as /home/emanuele/Android/Sdk/platform-tools/adb
+           Running on Linux 6.17.0-35-generic (x86_64)
+[        ] executing: /home/emanuele/Android/Sdk/platform-tools/adb start-server
+[   +5 ms] Building APK
+[   +5 ms] executing: /home/emanuele/sviluppo/android-studio/jbr/bin/java -version
+[  +64 ms] Exit code 0 from: /home/emanuele/sviluppo/android-studio/jbr/bin/java -version
+[        ] openjdk version "21.0.10" 2026-01-20
+           OpenJDK Runtime Environment (build 21.0.10+-14961533-b1163.108)
+           OpenJDK 64-Bit Server VM (build 21.0.10+-14961533-b1163.108, mixed mode)
+[   +5 ms] Top-level Gradle build file not found, skipping migration of task "clean".
+[   +1 ms] executing: /home/emanuele/sviluppo/android-studio/jbr/bin/java --version
+[  +53 ms] Exit code 0 from: /home/emanuele/sviluppo/android-studio/jbr/bin/java --version
+[        ] openjdk 21.0.10 2026-01-20
+           OpenJDK Runtime Environment (build 21.0.10+-14961533-b1163.108)
+           OpenJDK 64-Bit Server VM (build 21.0.10+-14961533-b1163.108, mixed mode)
+[   +1 ms] Version of Java is different than impacted version, no migration attempted.
+[   +2 ms] CMake project not found, skipping support Android 15 16k page size migration.
+[   +2 ms] The developer has already configured the Built-In Kotlin flag, skipping migration.
+[   +1 ms] The developer has already configured the new DSL flag, skipping migration.
+[   +3 ms] Using gradle from /home/emanuele/flutter/crypto_tracker/android/gradlew.
+[  +11 ms] LocalFile: '/home/emanuele/flutter/crypto_tracker/android/build.gradle.kts' doesn't provide an AGP version. Checking settings.
+[        ] LocalFile: '/home/emanuele/flutter/crypto_tracker/android/settings.gradle.kts' provides AGP version: 8.11.1
+[   +4 ms] Running Gradle task 'assembleDebug'...
+[        ] executing: [/home/emanuele/flutter/crypto_tracker/android/] /home/emanuele/flutter/crypto_tracker/android/gradlew --full-stacktrace --info -Pverbose=true -Ptarget-platform=android-arm64 -Ptarget=/home/emanuele/flutter/crypto_tracker/lib/main.dart -Pbase-application-name=android.app.Application -Pdart-defines=RkxVVFRFUl9WRVJTSU9OPTMuNDQuMQ==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049OTI0MTM0YTQ0Yw==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049YzQxNmFjZmViOA==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMi4x -Pdart-obfuscation=false -Ptrack-widget-creation=true -Ptree-shake-icons=false -Pfilesystem-scheme=org-dartlang-root assembleDebug
+[ +396 ms] Initialized native services in: /home/emanuele/.gradle/native
+[        ] Initialized jansi services in: /home/emanuele/.gradle/native
+[ +323 ms] The client will now receive all logging from the daemon (pid: 21017). The daemon log file: /home/emanuele/.gradle/daemon/8.14/daemon-21017.out.log
+[        ] Starting 6th build in daemon [uptime: 18 mins 46.432 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 8 GiB, non-heap usage: 11% of 4 GiB]
+[        ] Using 8 worker leases.
+[        ] Now considering [/home/emanuele/flutter/crypto_tracker/android, /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle] as hierarchies to watch
+[        ] Watching the file system is configured to be enabled if available
+[        ] File system watching is active
+[        ] Starting Build
+[        ] Now considering [/home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle, /home/emanuele/flutter/crypto_tracker/android] as hierarchies to watch
+[ +699 ms] > Configure project :gradle
+[        ] Evaluating project ':gradle' using build file '/home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/build.gradle.kts'.
+[        ] Resolved plugin [id: 'org.gradle.java-gradle-plugin']
+[        ] Resolved plugin [id: 'org.gradle.groovy']
+[        ] Resource missing. [HTTP HEAD: https://plugins.gradle.org/m2/org/gradle/kotlin/kotlin-dsl/org.gradle.kotlin.kotlin-dsl.gradle.plugin/5.2.0/org.gradle.kotlin.kotlin-dsl.gradle.plugin-5.2.0.jar]
+[        ] Resolved plugin [id: 'org.gradle.kotlin.kotlin-dsl', version: '5.2.0']
+[        ] Resource missing. [HTTP HEAD: https://plugins.gradle.org/m2/org/jetbrains/kotlin/jvm/org.jetbrains.kotlin.jvm.gradle.plugin/2.2.20/org.jetbrains.kotlin.jvm.gradle.plugin-2.2.20.jar]
+[        ] Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.20']
+[        ] Build d2195cba-8d78-45af-815a-ebd30aa529ed is started
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+[        ] kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+[        ] WARNING: Unsupported Kotlin plugin version.
+[        ] The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.0.21` that might work differently than in the requested version `2.2.20`.
+[        ] file or directory '/home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/java', not found
+[        ] Resolved plugin [id: 'dev.flutter.flutter-plugin-loader', version: '1.0.0']
+[ +198 ms] Resource missing. [HTTP HEAD: https://dl.google.com/dl/android/maven2/com/android/application/com.android.application.gradle.plugin/8.11.1/com.android.application.gradle.plugin-8.11.1.jar]
+[        ] Resolved plugin [id: 'com.android.application', version: '8.11.1', apply: false]
+[ +200 ms] Resource missing. [HTTP HEAD: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/android/org.jetbrains.kotlin.android.gradle.plugin/2.2.20/org.jetbrains.kotlin.android.gradle.plugin-2.2.20.jar]
+[        ] Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.2.20', apply: false]
+[        ] Resolve mutations for :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#910,Execution worker,5,main]) started.
+[        ] :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':gradle:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :gradle:compileKotlin (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :gradle:compileKotlin (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :gradle:compileKotlin UP-TO-DATE
+[        ] Caching disabled for task ':gradle:compileKotlin' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':gradle:compileKotlin' as it is up-to-date.
+[        ] Resolve mutations for :gradle:compileJava (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :gradle:compileJava (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :gradle:compileJava NO-SOURCE
+[        ] Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+[        ] Resolve mutations for :gradle:compileGroovy (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :gradle:compileGroovy (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :gradle:compileGroovy NO-SOURCE
+[        ] Skipping task ':gradle:compileGroovy' as it has no source files and no previous output files.
+[        ] Resolve mutations for :gradle:pluginDescriptors (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :gradle:pluginDescriptors (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :gradle:pluginDescriptors UP-TO-DATE
+[        ] Caching disabled for task ':gradle:pluginDescriptors' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:pluginDescriptors' as it is up-to-date.
+[        ] Resolve mutations for :gradle:processResources (Thread[#910,Execution worker,5,main]) started.
+[        ] :gradle:processResources (Thread[#910,Execution worker,5,main]) started.
+[        ] > Task :gradle:processResources UP-TO-DATE
+[        ] Caching disabled for task ':gradle:processResources' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:processResources' as it is up-to-date.
+[        ] Resolve mutations for :gradle:classes (Thread[#910,Execution worker,5,main]) started.
+[        ] :gradle:classes (Thread[#909,included builds,5,main]) started.
+[        ] > Task :gradle:classes UP-TO-DATE
+[        ] Skipping task ':gradle:classes' as it has no actions.
+[        ] Resolve mutations for :gradle:jar (Thread[#909,included builds,5,main]) started.
+[        ] :gradle:jar (Thread[#909,included builds,5,main]) started.
+[        ] > Task :gradle:jar UP-TO-DATE
+[        ] Caching disabled for task ':gradle:jar' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:jar' as it is up-to-date.
+[  +96 ms] Settings evaluated using settings file '/home/emanuele/flutter/crypto_tracker/android/settings.gradle.kts'.
+[        ] Projects loaded. Root project using build file '/home/emanuele/flutter/crypto_tracker/android/build.gradle.kts'.
+[        ] Included projects: [root project 'android', project ':app', project ':flutter_secure_storage', project ':jni', project ':jni_flutter']
+[  +99 ms] > Configure project :app
+[        ] Evaluating project ':app' using build file '/home/emanuele/flutter/crypto_tracker/android/app/build.gradle.kts'.
+[        ] Resolved plugin [id: 'com.android.application']
+[        ] Resolved plugin [id: 'kotlin-android']
+[        ] Resolved plugin [id: 'dev.flutter.flutter-gradle-plugin']
+[        ] Using default execution profile
+[        ] Build 04961840-d064-4586-b3a4-499e5e2163fa is started
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[   +4 ms] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] > Configure project :
+[        ] Evaluating root project 'android' using build file '/home/emanuele/flutter/crypto_tracker/android/build.gradle.kts'.
+[  +87 ms] > Configure project :flutter_secure_storage
+[        ] Evaluating project ':flutter_secure_storage' using build file '/home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage-9.2.4/android/build.gradle'.
+[        ] Using default execution profile
+[  +99 ms] > Configure project :jni
+[        ] Evaluating project ':jni' using build file '/home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/build.gradle'.
+[        ] Using default execution profile
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[   +1 ms] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[   +2 ms] C/C++: ndk.dir in local.properties is not set
+[   +2 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/emanuele/Android/Sdk
+[  +84 ms] > Configure project :jni_flutter
+[        ] Evaluating project ':jni_flutter' using build file '/home/emanuele/.pub-cache/hosted/pub.dev/jni_flutter-1.0.1/android/build.gradle'.
+[        ] Using default execution profile
+[        ] All projects evaluated.
+[        ] Task name matched 'assembleDebug'
+[        ] Selected primary task 'assembleDebug' from project :
+[        ] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+[  +98 ms] Tasks to be executed: [task ':app:DebugMinSdkCheck', task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':flutter_secure_storage:preBuild', task ':flutter_secure_storage:preDebugBuild', task ':flutter_secure_storage:writeDebugAarMetadata', task ':jni:preBuild', task ':jni:preDebugBuild', task ':jni:writeDebugAarMetadata', task ':jni_flutter:preBuild', task ':jni_flutter:preDebugBuild', task ':jni_flutter:writeDebugAarMetadata', task ':app:checkDebugAarMetadata', task ':app:cleanMergeDebugAssets', task ':app:compileFlutterBuildDebug', task ':app:mergeDebugShaders', task ':app:compileDebugShaders', task ':app:generateDebugAssets', task ':flutter_secure_storage:mergeDebugShaders', task ':flutter_secure_storage:compileDebugShaders', task ':flutter_secure_storage:generateDebugAssets', task ':flutter_secure_storage:mergeDebugAssets', task ':jni:mergeDebugShaders', task ':jni:compileDebugShaders', task ':jni:generateDebugAssets', task ':jni:mergeDebugAssets', task ':jni_flutter:mergeDebugShaders', task ':jni_flutter:compileDebugShaders', task ':jni_flutter:generateDebugAssets', task ':jni_flutter:mergeDebugAssets', task ':app:mergeDebugAssets', task ':app:copyFlutterAssetsDebug', task ':app:generateDebugResValues', task ':flutter_secure_storage:generateDebugResValues', task ':flutter_secure_storage:generateDebugResources', task ':flutter_secure_storage:packageDebugResources', task ':jni:generateDebugResValues', task ':jni:generateDebugResources', task ':jni:packageDebugResources', task ':jni_flutter:generateDebugResValues', task ':jni_flutter:generateDebugResources', task ':jni_flutter:packageDebugResources', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':flutter_secure_storage:extractDeepLinksDebug', task ':flutter_secure_storage:processDebugManifest', task ':jni:extractDeepLinksDebug', task ':jni:processDebugManifest', task ':jni_flutter:extractDeepLinksDebug', task ':jni_flutter:processDebugManifest', task ':app:processDebugMainManifest', task ':app:outputDebugAppLinkSettings', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':flutter_secure_storage:compileDebugLibraryResources', task ':flutter_secure_storage:parseDebugLocalResources', task ':flutter_secure_storage:generateDebugRFile', task ':jni:compileDebugLibraryResources', task ':jni:parseDebugLocalResources', task ':jni:generateDebugRFile', task ':jni_flutter:compileDebugLibraryResources', task ':jni_flutter:parseDebugLocalResources', task ':jni_flutter:generateDebugRFile', task ':app:processDebugResources', task ':flutter_secure_storage:checkKotlinGradlePluginConfigurationErrors', task ':flutter_secure_storage:generateDebugBuildConfig', task ':flutter_secure_storage:compileDebugKotlin', task ':flutter_secure_storage:javaPreCompileDebug', task ':flutter_secure_storage:compileDebugJavaWithJavac', task ':flutter_secure_storage:bundleLibCompileToJarDebug', task ':jni:checkKotlinGradlePluginConfigurationErrors', task ':jni:compileDebugKotlin', task ':jni:javaPreCompileDebug', task ':jni:compileDebugJavaWithJavac', task ':jni:bundleLibCompileToJarDebug', task ':jni_flutter:checkKotlinGradlePluginConfigurationErrors', task ':jni_flutter:compileDebugKotlin', task ':jni_flutter:javaPreCompileDebug', task ':jni_flutter:compileDebugJavaWithJavac', task ':jni_flutter:bundleLibCompileToJarDebug', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:compressDebugAssets', task ':flutter_secure_storage:bundleLibRuntimeToJarDebug', task ':jni_flutter:bundleLibRuntimeToJarDebug', task ':jni:bundleLibRuntimeToJarDebug', task ':app:desugarDebugFileDependencies', task ':app:dexBuilderDebug', task ':app:mergeDebugGlobalSynthetics', task ':app:processDebugJavaRes', task ':flutter_secure_storage:processDebugJavaRes', task ':jni:processDebugJavaRes', task ':jni_flutter:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:mergeExtDexDebug', task ':flutter_secure_storage:bundleLibRuntimeToDirDebug', task ':jni_flutter:bundleLibRuntimeToDirDebug', task ':jni:bundleLibRuntimeToDirDebug', task ':app:mergeLibDexDebug', task ':app:mergeProjectDexDebug', task ':app:configureCMakeDebug[arm64-v8a]', task ':app:buildCMakeDebug[arm64-v8a]', task ':app:configureCMakeDebug[armeabi-v7a]', task ':app:buildCMakeDebug[armeabi-v7a]', task ':app:configureCMakeDebug[x86_64]', task ':app:buildCMakeDebug[x86_64]', task ':app:copyJniLibsflutterBuildDebug', task ':app:mergeDebugJniLibFolders', task ':flutter_secure_storage:mergeDebugJniLibFolders', task ':flutter_secure_storage:mergeDebugNativeLibs', task ':flutter_secure_storage:copyDebugJniLibsProjectOnly', task ':jni:preProfileBuild', task ':jni:configureCMakeDebug[arm64-v8a]', task ':jni:buildCMakeDebug[arm64-v8a]', task ':jni:configureCMakeDebug[armeabi-v7a]', task ':jni:buildCMakeDebug[armeabi-v7a]', task ':jni:configureCMakeDebug[x86]', task ':jni:buildCMakeDebug[x86]', task ':jni:configureCMakeDebug[x86_64]', task ':jni:buildCMakeDebug[x86_64]', task ':jni:mergeDebugJniLibFolders', task ':jni:mergeDebugNativeLibs', task ':jni:copyDebugJniLibsProjectOnly', task ':jni_flutter:mergeDebugJniLibFolders', task ':jni_flutter:mergeDebugNativeLibs', task ':jni_flutter:copyDebugJniLibsProjectOnly', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug', task ':flutter_secure_storage:stripDebugDebugSymbols', task ':flutter_secure_storage:copyDebugJniLibsProjectAndLocalJars', task ':flutter_secure_storage:extractDebugAnnotations', task ':flutter_secure_storage:extractDeepLinksForAarDebug', task ':flutter_secure_storage:mergeDebugGeneratedProguardFiles', task ':flutter_secure_storage:mergeDebugConsumerProguardFiles', task ':flutter_secure_storage:prepareDebugArtProfile', task ':flutter_secure_storage:prepareLintJarForPublish', task ':flutter_secure_storage:mergeDebugJavaResource', task ':flutter_secure_storage:syncDebugLibJars', task ':flutter_secure_storage:bundleDebugAar', task ':flutter_secure_storage:assembleDebug', task ':jni:stripDebugDebugSymbols', task ':jni:copyDebugJniLibsProjectAndLocalJars', task ':jni:extractDebugAnnotations', task ':jni:extractDeepLinksForAarDebug', task ':jni:mergeDebugGeneratedProguardFiles', task ':jni:mergeDebugConsumerProguardFiles', task ':jni:prepareDebugArtProfile', task ':jni:prepareLintJarForPublish', task ':jni:mergeDebugJavaResource', task ':jni:syncDebugLibJars', task ':jni:bundleDebugAar', task ':jni:assembleDebug', task ':jni_flutter:stripDebugDebugSymbols', task ':jni_flutter:copyDebugJniLibsProjectAndLocalJars', task ':jni_flutter:extractDebugAnnotations', task ':jni_flutter:extractDeepLinksForAarDebug', task ':jni_flutter:mergeDebugGeneratedProguardFiles', task ':jni_flutter:mergeDebugConsumerProguardFiles', task ':jni_flutter:prepareDebugArtProfile', task ':jni_flutter:prepareLintJarForPublish', task ':jni_flutter:mergeDebugJavaResource', task ':jni_flutter:syncDebugLibJars', task ':jni_flutter:bundleDebugAar', task ':jni_flutter:assembleDebug']
+[        ] Tasks that were excluded: []
+[        ] work action Parameters of IdentityTransform (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] work action Parameters of DexingNoClasspathTransform (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] work action Parameters of DexingOutputSplitTransform (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] work action Parameters of ClassesDirToClassesTransform (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] work action Parameters of DexingOutputSplitTransform (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :app:DebugMinSdkCheck (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] :app:DebugMinSdkCheck (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:DebugMinSdkCheck
+[        ] Caching disabled for task ':app:DebugMinSdkCheck' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:DebugMinSdkCheck' is not up-to-date because:
+[        ]   Task has not declared any outputs despite executing actions.
+[        ] Resolve mutations for :app:preBuild (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] :app:preBuild (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] > Task :app:preBuild UP-TO-DATE
+[        ] Skipping task ':app:preBuild' as it has no actions.
+[        ] Resolve mutations for :app:preDebugBuild (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] :app:preDebugBuild (Thread[#910,Execution worker,5,main]) started.
+[        ] > Task :app:preDebugBuild UP-TO-DATE
+[        ] Skipping task ':app:preDebugBuild' as it has no actions.
+[        ] Resolve mutations for :app:mergeDebugNativeDebugMetadata (Thread[#910,Execution worker,5,main]) started.
+[        ] :app:mergeDebugNativeDebugMetadata (Thread[#910,Execution worker,5,main]) started.
+[        ] > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+[        ] Skipping task ':app:mergeDebugNativeDebugMetadata' as it has no source files and no previous output files.
+[        ] Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[#910,Execution worker,5,main]) started.
+[        ] :app:checkKotlinGradlePluginConfigurationErrors (Thread[#910,Execution worker,5,main]) started.
+[        ] > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :flutter_secure_storage:preBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :flutter_secure_storage:preBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :flutter_secure_storage:preBuild UP-TO-DATE
+[        ] Skipping task ':flutter_secure_storage:preBuild' as it has no actions.
+[        ] Resolve mutations for :flutter_secure_storage:preDebugBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :flutter_secure_storage:preDebugBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :flutter_secure_storage:preDebugBuild UP-TO-DATE
+[        ] Skipping task ':flutter_secure_storage:preDebugBuild' as it has no actions.
+[        ] Resolve mutations for :flutter_secure_storage:writeDebugAarMetadata (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :flutter_secure_storage:writeDebugAarMetadata (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :flutter_secure_storage:writeDebugAarMetadata UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:writeDebugAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':flutter_secure_storage:writeDebugAarMetadata' as it is up-to-date.
+[        ] work action resolve aar-metadata.properties (project :flutter_secure_storage) (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] Resolve mutations for :jni:preBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :jni:preBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni:preBuild UP-TO-DATE
+[        ] Skipping task ':jni:preBuild' as it has no actions.
+[        ] Resolve mutations for :jni:preDebugBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :jni:preDebugBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni:preDebugBuild UP-TO-DATE
+[        ] Skipping task ':jni:preDebugBuild' as it has no actions.
+[        ] Resolve mutations for :jni:writeDebugAarMetadata (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :jni:writeDebugAarMetadata (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni:writeDebugAarMetadata UP-TO-DATE
+[        ] Caching disabled for task ':jni:writeDebugAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni:writeDebugAarMetadata' as it is up-to-date.
+[        ] work action resolve aar-metadata.properties (project :jni) (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] Resolve mutations for :jni_flutter:preBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :jni_flutter:preBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni_flutter:preBuild UP-TO-DATE
+[        ] Skipping task ':jni_flutter:preBuild' as it has no actions.
+[        ] Resolve mutations for :jni_flutter:preDebugBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :jni_flutter:preDebugBuild (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni_flutter:preDebugBuild UP-TO-DATE
+[        ] Skipping task ':jni_flutter:preDebugBuild' as it has no actions.
+[        ] Resolve mutations for :jni_flutter:writeDebugAarMetadata (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :jni_flutter:writeDebugAarMetadata (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni_flutter:writeDebugAarMetadata UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:writeDebugAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni_flutter:writeDebugAarMetadata' as it is up-to-date.
+[        ] work action resolve aar-metadata.properties (project :jni_flutter) (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] Resolve mutations for :app:checkDebugAarMetadata (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :app:checkDebugAarMetadata (Thread[#916,Execution worker Thread 7,5,main]) started.
+[  +92 ms] > Task :app:checkDebugAarMetadata UP-TO-DATE
+[   +1 ms] Caching disabled for task ':app:checkDebugAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+[        ] Resolve mutations for :app:cleanMergeDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :app:cleanMergeDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :app:cleanMergeDebugAssets
+[        ] Caching disabled for task ':app:cleanMergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:cleanMergeDebugAssets' is not up-to-date because:
+[        ]   Task has not declared any outputs despite executing actions.
+[        ] Resolve mutations for :app:compileFlutterBuildDebug (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :app:compileFlutterBuildDebug (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :app:compileFlutterBuildDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:compileFlutterBuildDebug' because:
+[        ]   Build cache is disabled
+[        ]   Caching has not been enabled for the task
+[   +2 ms] Skipping task ':app:compileFlutterBuildDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:mergeDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :app:mergeDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :app:mergeDebugShaders UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeDebugShaders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':app:mergeDebugShaders' as it is up-to-date.
+[        ] Resolve mutations for :app:compileDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :app:compileDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :app:compileDebugShaders NO-SOURCE
+[        ] Skipping task ':app:compileDebugShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :app:generateDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :app:generateDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :app:generateDebugAssets UP-TO-DATE
+[        ] Skipping task ':app:generateDebugAssets' as it has no actions.
+[        ] Resolve mutations for :flutter_secure_storage:mergeDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :flutter_secure_storage:mergeDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :flutter_secure_storage:mergeDebugShaders UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:mergeDebugShaders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_secure_storage:mergeDebugShaders' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:compileDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :flutter_secure_storage:compileDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :flutter_secure_storage:compileDebugShaders NO-SOURCE
+[        ] Skipping task ':flutter_secure_storage:compileDebugShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :flutter_secure_storage:generateDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :flutter_secure_storage:generateDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :flutter_secure_storage:generateDebugAssets UP-TO-DATE
+[        ] Skipping task ':flutter_secure_storage:generateDebugAssets' as it has no actions.
+[        ] Resolve mutations for :flutter_secure_storage:mergeDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :flutter_secure_storage:mergeDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :flutter_secure_storage:mergeDebugAssets UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:mergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_secure_storage:mergeDebugAssets' as it is up-to-date.
+[        ] work action resolve mergeDebugAssets (project :flutter_secure_storage) (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] Resolve mutations for :jni:mergeDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :jni:mergeDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni:mergeDebugShaders UP-TO-DATE
+[        ] Caching disabled for task ':jni:mergeDebugShaders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni:mergeDebugShaders' as it is up-to-date.
+[        ] Resolve mutations for :jni:compileDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :jni:compileDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni:compileDebugShaders NO-SOURCE
+[        ] Skipping task ':jni:compileDebugShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :jni:generateDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :jni:generateDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni:generateDebugAssets UP-TO-DATE
+[        ] Skipping task ':jni:generateDebugAssets' as it has no actions.
+[        ] Resolve mutations for :jni:mergeDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :jni:mergeDebugAssets (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni:mergeDebugAssets UP-TO-DATE
+[        ] Caching disabled for task ':jni:mergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni:mergeDebugAssets' as it is up-to-date.
+[        ] work action resolve mergeDebugAssets (project :jni) (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] Resolve mutations for :jni_flutter:mergeDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :jni_flutter:mergeDebugShaders (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni_flutter:mergeDebugShaders UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:mergeDebugShaders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni_flutter:mergeDebugShaders' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:compileDebugShaders (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:compileDebugShaders (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:compileDebugShaders NO-SOURCE
+[        ] Skipping task ':jni_flutter:compileDebugShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :jni_flutter:generateDebugAssets (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:generateDebugAssets (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:generateDebugAssets UP-TO-DATE
+[        ] Skipping task ':jni_flutter:generateDebugAssets' as it has no actions.
+[        ] Resolve mutations for :jni_flutter:mergeDebugAssets (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:mergeDebugAssets (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:mergeDebugAssets UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:mergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni_flutter:mergeDebugAssets' as it is up-to-date.
+[        ] work action resolve mergeDebugAssets (project :jni_flutter) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :app:mergeDebugAssets (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:mergeDebugAssets (Thread[#915,Execution worker Thread 6,5,main]) started.
+[  +87 ms] > Task :app:mergeDebugAssets
+[        ] Caching disabled for task ':app:mergeDebugAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Task ':app:mergeDebugAssets' is not up-to-date because:
+[        ]   Output property 'outputDir' file /home/emanuele/flutter/crypto_tracker/build/app/intermediates/assets/debug/mergeDebugAssets has been removed.
+[        ] The input changes require a full rebuild for incremental task ':app:mergeDebugAssets'.
+[        ] Resolve mutations for :app:copyFlutterAssetsDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:copyFlutterAssetsDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[  +99 ms] > Task :app:copyFlutterAssetsDebug
+[        ] Caching disabled for task ':app:copyFlutterAssetsDebug' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Task ':app:copyFlutterAssetsDebug' is not up-to-date because:
+[        ]   Output property 'destinationDir' file /home/emanuele/flutter/crypto_tracker/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets has been removed.
+[        ]   Output property 'destinationDir' file /home/emanuele/flutter/crypto_tracker/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/AssetManifest.bin has been removed.
+[        ]   Output property 'destinationDir' file /home/emanuele/flutter/crypto_tracker/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/FontManifest.json has been removed.
+[        ]   and more...
+[        ] Resolve mutations for :app:generateDebugResValues (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:generateDebugResValues (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:generateDebugResValues UP-TO-DATE
+[        ] Caching disabled for task ':app:generateDebugResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:generateDebugResValues' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:generateDebugResValues (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:generateDebugResValues (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:generateDebugResValues UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:generateDebugResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:generateDebugResValues' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:generateDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:generateDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:generateDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:generateDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:generateDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:packageDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:packageDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:packageDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:packageDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:packageDebugResources' as it is up-to-date.
+[        ] work action resolve packageDebugResources (project :flutter_secure_storage) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :jni:generateDebugResValues (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:generateDebugResValues (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:generateDebugResValues UP-TO-DATE
+[        ] Caching disabled for task ':jni:generateDebugResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:generateDebugResValues' as it is up-to-date.
+[        ] Resolve mutations for :jni:generateDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:generateDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:generateDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':jni:generateDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:generateDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :jni:packageDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:packageDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:packageDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':jni:packageDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:packageDebugResources' as it is up-to-date.
+[        ] work action resolve packageDebugResources (project :jni) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :jni_flutter:generateDebugResValues (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:generateDebugResValues (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:generateDebugResValues UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:generateDebugResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:generateDebugResValues' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:generateDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:generateDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:generateDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:generateDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:generateDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:packageDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:packageDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:packageDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:packageDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:packageDebugResources' as it is up-to-date.
+[        ] work action resolve packageDebugResources (project :jni_flutter) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :app:mapDebugSourceSetPaths (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:mapDebugSourceSetPaths (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:mapDebugSourceSetPaths UP-TO-DATE
+[        ] Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+[        ] Resolve mutations for :app:generateDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:generateDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:generateDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':app:generateDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:generateDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :app:mergeDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:mergeDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:mergeDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:mergeDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :app:packageDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:packageDebugResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[   +1 ms] > Task :app:packageDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':app:packageDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:packageDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :app:parseDebugLocalResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:parseDebugLocalResources (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:parseDebugLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':app:parseDebugLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:createDebugCompatibleScreenManifests (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+[        ] Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+[        ] Resolve mutations for :app:extractDeepLinksDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:extractDeepLinksDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:extractDeepLinksDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:extractDeepLinksDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:extractDeepLinksDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:extractDeepLinksDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:extractDeepLinksDebug UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:extractDeepLinksDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:extractDeepLinksDebug' as it is up-to-date.
+[        ] work action resolve navigation.json (project :flutter_secure_storage) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :flutter_secure_storage:processDebugManifest (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:processDebugManifest (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:processDebugManifest UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:processDebugManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:processDebugManifest' as it is up-to-date.
+[        ] work action resolve AndroidManifest.xml (project :flutter_secure_storage) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :jni:extractDeepLinksDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:extractDeepLinksDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:extractDeepLinksDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni:extractDeepLinksDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:extractDeepLinksDebug' as it is up-to-date.
+[        ] work action resolve navigation.json (project :jni) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :jni:processDebugManifest (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:processDebugManifest (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:processDebugManifest UP-TO-DATE
+[        ] Caching disabled for task ':jni:processDebugManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:processDebugManifest' as it is up-to-date.
+[        ] work action resolve AndroidManifest.xml (project :jni) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :jni_flutter:extractDeepLinksDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:extractDeepLinksDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:extractDeepLinksDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:extractDeepLinksDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:extractDeepLinksDebug' as it is up-to-date.
+[        ] work action resolve navigation.json (project :jni_flutter) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :jni_flutter:processDebugManifest (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni_flutter:processDebugManifest (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni_flutter:processDebugManifest UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:processDebugManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:processDebugManifest' as it is up-to-date.
+[        ] work action resolve AndroidManifest.xml (project :jni_flutter) (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] Resolve mutations for :app:processDebugMainManifest (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :app:processDebugMainManifest (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :app:processDebugMainManifest UP-TO-DATE
+[        ] Caching disabled for task ':app:processDebugMainManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processDebugMainManifest' as it is up-to-date.
+[        ] Resolve mutations for :app:outputDebugAppLinkSettings (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :app:outputDebugAppLinkSettings (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :app:outputDebugAppLinkSettings UP-TO-DATE
+[        ] Caching disabled for task ':app:outputDebugAppLinkSettings' because:
+[        ]   Build cache is disabled
+[        ]   Caching has not been enabled for the task
+[        ] Skipping task ':app:outputDebugAppLinkSettings' as it is up-to-date.
+[        ] Resolve mutations for :app:processDebugManifest (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :app:processDebugManifest (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :app:processDebugManifest UP-TO-DATE
+[        ] Caching disabled for task ':app:processDebugManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processDebugManifest' as it is up-to-date.
+[        ] Resolve mutations for :app:processDebugManifestForPackage (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :app:processDebugManifestForPackage (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :app:processDebugManifestForPackage UP-TO-DATE
+[        ] Custom actions are attached to task ':app:processDebugManifestForPackage'.
+[        ] Caching disabled for task ':app:processDebugManifestForPackage' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processDebugManifestForPackage' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:compileDebugLibraryResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :flutter_secure_storage:compileDebugLibraryResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :flutter_secure_storage:compileDebugLibraryResources UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:compileDebugLibraryResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:compileDebugLibraryResources' as it is up-to-date.
+[        ] work action resolve out (project :flutter_secure_storage) (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] Resolve mutations for :flutter_secure_storage:parseDebugLocalResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :flutter_secure_storage:parseDebugLocalResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :flutter_secure_storage:parseDebugLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:parseDebugLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:parseDebugLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:generateDebugRFile (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :flutter_secure_storage:generateDebugRFile (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :flutter_secure_storage:generateDebugRFile UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:generateDebugRFile' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:generateDebugRFile' as it is up-to-date.
+[        ] work action resolve package-aware-r.txt (project :flutter_secure_storage) (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] Resolve mutations for :jni:compileDebugLibraryResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:compileDebugLibraryResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:compileDebugLibraryResources UP-TO-DATE
+[        ] Caching disabled for task ':jni:compileDebugLibraryResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:compileDebugLibraryResources' as it is up-to-date.
+[        ] work action resolve out (project :jni) (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] Resolve mutations for :jni:parseDebugLocalResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:parseDebugLocalResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:parseDebugLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':jni:parseDebugLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:parseDebugLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :jni:generateDebugRFile (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:generateDebugRFile (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:generateDebugRFile UP-TO-DATE
+[        ] Caching disabled for task ':jni:generateDebugRFile' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:generateDebugRFile' as it is up-to-date.
+[        ] work action resolve package-aware-r.txt (project :jni) (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] Resolve mutations for :jni_flutter:compileDebugLibraryResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni_flutter:compileDebugLibraryResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[  +82 ms] > Task :jni_flutter:compileDebugLibraryResources UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:compileDebugLibraryResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:compileDebugLibraryResources' as it is up-to-date.
+[        ] work action resolve out (project :jni_flutter) (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] Resolve mutations for :jni_flutter:parseDebugLocalResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni_flutter:parseDebugLocalResources (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni_flutter:parseDebugLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:parseDebugLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:parseDebugLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:generateDebugRFile (Thread[#910,Execution worker,5,main]) started.
+[        ] :jni_flutter:generateDebugRFile (Thread[#910,Execution worker,5,main]) started.
+[        ] > Task :jni_flutter:generateDebugRFile UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:generateDebugRFile' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:generateDebugRFile' as it is up-to-date.
+[        ] work action resolve package-aware-r.txt (project :jni_flutter) (Thread[#910,Execution worker,5,main]) started.
+[        ] Resolve mutations for :app:processDebugResources (Thread[#910,Execution worker,5,main]) started.
+[        ] :app:processDebugResources (Thread[#910,Execution worker,5,main]) started.
+[        ] > Task :app:processDebugResources UP-TO-DATE
+[        ] Caching disabled for task ':app:processDebugResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processDebugResources' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:checkKotlinGradlePluginConfigurationErrors (Thread[#910,Execution worker,5,main]) started.
+[        ] :flutter_secure_storage:checkKotlinGradlePluginConfigurationErrors (Thread[#910,Execution worker,5,main]) started.
+[        ] > Task :flutter_secure_storage:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':flutter_secure_storage:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :flutter_secure_storage:generateDebugBuildConfig (Thread[#910,Execution worker,5,main]) started.
+[        ] :flutter_secure_storage:generateDebugBuildConfig (Thread[#910,Execution worker,5,main]) started.
+[        ] > Task :flutter_secure_storage:generateDebugBuildConfig UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:generateDebugBuildConfig' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:generateDebugBuildConfig' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:compileDebugKotlin (Thread[#910,Execution worker,5,main]) started.
+[        ] :flutter_secure_storage:compileDebugKotlin (Thread[#910,Execution worker,5,main]) started.
+[        ] > Task :flutter_secure_storage:compileDebugKotlin NO-SOURCE
+[        ] Skipping task ':flutter_secure_storage:compileDebugKotlin' as it has no source files and no previous output files.
+[        ] Resolve mutations for :flutter_secure_storage:javaPreCompileDebug (Thread[#910,Execution worker,5,main]) started.
+[   +1 ms] :flutter_secure_storage:javaPreCompileDebug (Thread[#910,Execution worker,5,main]) started.
+[        ] > Task :flutter_secure_storage:javaPreCompileDebug UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:javaPreCompileDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:javaPreCompileDebug' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:compileDebugJavaWithJavac (Thread[#910,Execution worker,5,main]) started.
+[        ] :flutter_secure_storage:compileDebugJavaWithJavac (Thread[#910,Execution worker,5,main]) started.
+[   +1 ms] > Task :flutter_secure_storage:compileDebugJavaWithJavac UP-TO-DATE
+[   +2 ms] Custom actions are attached to task ':flutter_secure_storage:compileDebugJavaWithJavac'.
+[        ] Caching disabled for task ':flutter_secure_storage:compileDebugJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:compileDebugJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :flutter_secure_storage:compileDebugJavaWithJavac
+[        ] No compile result for :flutter_secure_storage:compileDebugJavaWithJavac
+[        ] No compile result for :flutter_secure_storage:compileDebugJavaWithJavac
+[        ] Resolve mutations for :flutter_secure_storage:bundleLibCompileToJarDebug (Thread[#910,Execution worker,5,main]) started.
+[        ] :flutter_secure_storage:bundleLibCompileToJarDebug (Thread[#910,Execution worker,5,main]) started.
+[        ] > Task :flutter_secure_storage:bundleLibCompileToJarDebug UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:bundleLibCompileToJarDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_secure_storage:bundleLibCompileToJarDebug' as it is up-to-date.
+[        ] work action resolve classes.jar (project :flutter_secure_storage) (Thread[#910,Execution worker,5,main]) started.
+[        ] Resolve mutations for :jni:checkKotlinGradlePluginConfigurationErrors (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:checkKotlinGradlePluginConfigurationErrors (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':jni:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :jni:compileDebugKotlin (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:compileDebugKotlin (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:compileDebugKotlin NO-SOURCE
+[        ] Skipping task ':jni:compileDebugKotlin' as it has no source files and no previous output files.
+[        ] Resolve mutations for :jni:javaPreCompileDebug (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:javaPreCompileDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:javaPreCompileDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni:javaPreCompileDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:javaPreCompileDebug' as it is up-to-date.
+[        ] Resolve mutations for :jni:compileDebugJavaWithJavac (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:compileDebugJavaWithJavac (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:compileDebugJavaWithJavac UP-TO-DATE
+[        ] Custom actions are attached to task ':jni:compileDebugJavaWithJavac'.
+[        ] Caching disabled for task ':jni:compileDebugJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:compileDebugJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :jni:compileDebugJavaWithJavac
+[        ] No compile result for :jni:compileDebugJavaWithJavac
+[        ] No compile result for :jni:compileDebugJavaWithJavac
+[        ] Resolve mutations for :jni:bundleLibCompileToJarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:bundleLibCompileToJarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:bundleLibCompileToJarDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni:bundleLibCompileToJarDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni:bundleLibCompileToJarDebug' as it is up-to-date.
+[        ] work action resolve classes.jar (project :jni) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :jni_flutter:checkKotlinGradlePluginConfigurationErrors (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:checkKotlinGradlePluginConfigurationErrors (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':jni_flutter:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :jni_flutter:compileDebugKotlin (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:compileDebugKotlin (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:compileDebugKotlin NO-SOURCE
+[        ] Skipping task ':jni_flutter:compileDebugKotlin' as it has no source files and no previous output files.
+[        ] Resolve mutations for :jni_flutter:javaPreCompileDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:javaPreCompileDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:javaPreCompileDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:javaPreCompileDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:javaPreCompileDebug' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:compileDebugJavaWithJavac (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:compileDebugJavaWithJavac (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:compileDebugJavaWithJavac UP-TO-DATE
+[        ] Custom actions are attached to task ':jni_flutter:compileDebugJavaWithJavac'.
+[        ] Caching disabled for task ':jni_flutter:compileDebugJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:compileDebugJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :jni_flutter:compileDebugJavaWithJavac
+[        ] No compile result for :jni_flutter:compileDebugJavaWithJavac
+[        ] No compile result for :jni_flutter:compileDebugJavaWithJavac
+[        ] Resolve mutations for :jni_flutter:bundleLibCompileToJarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:bundleLibCompileToJarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:bundleLibCompileToJarDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:bundleLibCompileToJarDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni_flutter:bundleLibCompileToJarDebug' as it is up-to-date.
+[        ] work action resolve classes.jar (project :jni_flutter) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :app:compileDebugKotlin (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:compileDebugKotlin (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:compileDebugKotlin UP-TO-DATE
+[        ] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugAndroidTestKotlin
+[        ] GradleBuildProject.Builder should not be accessed through AnalyticsConfiguratorService after AnalyticsService is created. Analytics information of this build might be incomplete.
+[        ] Caching disabled for task ':app:compileDebugKotlin' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:compileDebugKotlin' as it is up-to-date.
+[        ] Resolve mutations for :app:javaPreCompileDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:javaPreCompileDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:javaPreCompileDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:javaPreCompileDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:javaPreCompileDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:compileDebugJavaWithJavac (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:compileDebugJavaWithJavac (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:compileDebugJavaWithJavac UP-TO-DATE
+[        ] Custom actions are attached to task ':app:compileDebugJavaWithJavac'.
+[        ] Caching disabled for task ':app:compileDebugJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:compileDebugJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :app:compileDebugJavaWithJavac
+[        ] No compile result for :app:compileDebugJavaWithJavac
+[        ] No compile result for :app:compileDebugJavaWithJavac
+[        ] Resolve mutations for :app:compressDebugAssets (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:compressDebugAssets (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:compressDebugAssets UP-TO-DATE
+[        ] Caching disabled for task ':app:compressDebugAssets' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:compressDebugAssets' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:bundleLibRuntimeToJarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:bundleLibRuntimeToJarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:bundleLibRuntimeToJarDebug UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:bundleLibRuntimeToJarDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_secure_storage:bundleLibRuntimeToJarDebug' as it is up-to-date.
+[        ] work action resolve classes.jar (project :flutter_secure_storage) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] IdentityTransform (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :jni_flutter:bundleLibRuntimeToJarDebug (Thread[#909,included builds,5,main]) started.
+[        ] :jni_flutter:bundleLibRuntimeToJarDebug (Thread[#909,included builds,5,main]) started.
+[        ] DexingNoClasspathTransform (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Transform classes.jar (project :flutter_secure_storage) with DexingNoClasspathTransform
+[        ] Caching disabled for DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/flutter_secure_storage/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar because:
+[        ]   Build cache is disabled
+[        ] Skipping DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/flutter_secure_storage/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar as it is up-to-date.
+[        ] DexingOutputSplitTransform (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:bundleLibRuntimeToJarDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:bundleLibRuntimeToJarDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni_flutter:bundleLibRuntimeToJarDebug' as it is up-to-date.
+[        ] work action resolve classes.jar (project :jni_flutter) (Thread[#909,included builds,5,main]) started.
+[        ] IdentityTransform (Thread[#909,included builds,5,main]) started.
+[        ] DexingNoClasspathTransform (Thread[#909,included builds,5,main]) started.
+[        ] Resolve mutations for :jni:bundleLibRuntimeToJarDebug (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :jni:bundleLibRuntimeToJarDebug (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Transform classes.jar (project :jni_flutter) with DexingNoClasspathTransform
+[        ] Caching disabled for DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/jni_flutter/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar because:
+[        ]   Build cache is disabled
+[        ] Skipping DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/jni_flutter/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar as it is up-to-date.
+[        ] DexingOutputSplitTransform (Thread[#909,included builds,5,main]) started.
+[        ] > Task :jni:bundleLibRuntimeToJarDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni:bundleLibRuntimeToJarDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni:bundleLibRuntimeToJarDebug' as it is up-to-date.
+[        ] work action resolve classes.jar (project :jni) (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] IdentityTransform (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] DexingNoClasspathTransform (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] Resolve mutations for :app:desugarDebugFileDependencies (Thread[#909,included builds,5,main]) started.
+[        ] :app:desugarDebugFileDependencies (Thread[#909,included builds,5,main]) started.
+[        ] > Transform classes.jar (project :jni) with DexingNoClasspathTransform
+[        ] Caching disabled for DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/jni/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar because:
+[        ]   Build cache is disabled
+[        ] Skipping DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/jni/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar as it is up-to-date.
+[        ] DexingOutputSplitTransform (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :app:desugarDebugFileDependencies UP-TO-DATE
+[        ] Caching disabled for task ':app:desugarDebugFileDependencies' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:desugarDebugFileDependencies' as it is up-to-date.
+[        ] Resolve mutations for :app:dexBuilderDebug (Thread[#909,included builds,5,main]) started.
+[        ] :app:dexBuilderDebug (Thread[#909,included builds,5,main]) started.
+[        ] > Task :app:dexBuilderDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:dexBuilderDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:dexBuilderDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:mergeDebugGlobalSynthetics (Thread[#909,included builds,5,main]) started.
+[        ] :app:mergeDebugGlobalSynthetics (Thread[#909,included builds,5,main]) started.
+[  +80 ms] > Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
+[   +1 ms] Caching disabled for task ':app:mergeDebugGlobalSynthetics' because:
+[        ]   Build cache is disabled
+[   +1 ms] Skipping task ':app:mergeDebugGlobalSynthetics' as it is up-to-date.
+[        ] Resolve mutations for :app:processDebugJavaRes (Thread[#909,included builds,5,main]) started.
+[        ] :app:processDebugJavaRes (Thread[#909,included builds,5,main]) started.
+[        ] > Task :app:processDebugJavaRes UP-TO-DATE
+[        ] file or directory '/home/emanuele/flutter/crypto_tracker/android/app/src/main/resources', not found
+[        ] file or directory '/home/emanuele/flutter/crypto_tracker/android/app/src/debug/resources', not found
+[        ] file or directory '/home/emanuele/flutter/crypto_tracker/android/app/src/main/resources', not found
+[        ] file or directory '/home/emanuele/flutter/crypto_tracker/android/app/src/debug/resources', not found
+[        ] Caching disabled for task ':app:processDebugJavaRes' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:processDebugJavaRes' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:processDebugJavaRes (Thread[#909,included builds,5,main]) started.
+[        ] :flutter_secure_storage:processDebugJavaRes (Thread[#909,included builds,5,main]) started.
+[        ] > Task :flutter_secure_storage:processDebugJavaRes NO-SOURCE
+[        ] file or directory '/home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage-9.2.4/android/src/main/resources', not found
+[        ] file or directory '/home/emanuele/.pub-cache/hosted/pub.dev/flutter_secure_storage-9.2.4/android/src/debug/resources', not found
+[        ] Skipping task ':flutter_secure_storage:processDebugJavaRes' as it has no source files and no previous output files.
+[        ] work action resolve out (project :flutter_secure_storage) (Thread[#909,included builds,5,main]) started.
+[        ] Resolve mutations for :jni:processDebugJavaRes (Thread[#909,included builds,5,main]) started.
+[        ] :jni:processDebugJavaRes (Thread[#909,included builds,5,main]) started.
+[        ] > Task :jni:processDebugJavaRes NO-SOURCE
+[        ] file or directory '/home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/src/main/resources', not found
+[        ] file or directory '/home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/src/debug/resources', not found
+[        ] Skipping task ':jni:processDebugJavaRes' as it has no source files and no previous output files.
+[        ] work action resolve out (project :jni) (Thread[#909,included builds,5,main]) started.
+[        ] Resolve mutations for :jni_flutter:processDebugJavaRes (Thread[#909,included builds,5,main]) started.
+[        ] :jni_flutter:processDebugJavaRes (Thread[#909,included builds,5,main]) started.
+[   +1 ms] > Task :jni_flutter:processDebugJavaRes NO-SOURCE
+[        ] file or directory '/home/emanuele/.pub-cache/hosted/pub.dev/jni_flutter-1.0.1/android/src/main/resources', not found
+[        ] file or directory '/home/emanuele/.pub-cache/hosted/pub.dev/jni_flutter-1.0.1/android/src/debug/resources', not found
+[        ] Skipping task ':jni_flutter:processDebugJavaRes' as it has no source files and no previous output files.
+[   +1 ms] work action resolve out (project :jni_flutter) (Thread[#909,included builds,5,main]) started.
+[        ] Resolve mutations for :app:mergeDebugJavaResource (Thread[#909,included builds,5,main]) started.
+[        ] :app:mergeDebugJavaResource (Thread[#909,included builds,5,main]) started.
+[        ] > Task :app:mergeDebugJavaResource UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeDebugJavaResource' because:
+[        ]   Build cache is disabled
+[   +1 ms]   Caching has been disabled for the task
+[        ] Skipping task ':app:mergeDebugJavaResource' as it is up-to-date.
+[        ] Resolve mutations for :app:checkDebugDuplicateClasses (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :app:checkDebugDuplicateClasses (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :app:checkDebugDuplicateClasses UP-TO-DATE
+[        ] Caching disabled for task ':app:checkDebugDuplicateClasses' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:checkDebugDuplicateClasses' as it is up-to-date.
+[        ] Resolve mutations for :app:mergeExtDexDebug (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :app:mergeExtDexDebug (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :app:mergeExtDexDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeExtDexDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:mergeExtDexDebug' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:bundleLibRuntimeToDirDebug (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] :flutter_secure_storage:bundleLibRuntimeToDirDebug (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :flutter_secure_storage:bundleLibRuntimeToDirDebug UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:bundleLibRuntimeToDirDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_secure_storage:bundleLibRuntimeToDirDebug' as it is up-to-date.
+[        ] work action resolve bundleLibRuntimeToDirDebug (project :flutter_secure_storage) (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] ClassesDirToClassesTransform (Thread[#916,Execution worker Thread 7,5,main]) started.
+[   +3 ms] Resolve mutations for :jni_flutter:bundleLibRuntimeToDirDebug (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :jni_flutter:bundleLibRuntimeToDirDebug (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] DexingNoClasspathTransform (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :jni_flutter:bundleLibRuntimeToDirDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:bundleLibRuntimeToDirDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni_flutter:bundleLibRuntimeToDirDebug' as it is up-to-date.
+[        ] work action resolve bundleLibRuntimeToDirDebug (project :jni_flutter) (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] ClassesDirToClassesTransform (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Transform bundleLibRuntimeToDirDebug (project :flutter_secure_storage) with DexingNoClasspathTransform
+[        ] Caching disabled for DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/flutter_secure_storage/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug because:
+[        ]   Build cache is disabled
+[        ] Skipping DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/flutter_secure_storage/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug as it is up-to-date.
+[        ] DexingOutputSplitTransform (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] DexingNoClasspathTransform (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] Resolve mutations for :jni:bundleLibRuntimeToDirDebug (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] > Transform bundleLibRuntimeToDirDebug (project :jni_flutter) with DexingNoClasspathTransform
+[        ] Caching disabled for DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/jni_flutter/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug because:
+[        ]   Build cache is disabled
+[        ] Skipping DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/jni_flutter/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug as it is up-to-date.
+[        ] :jni:bundleLibRuntimeToDirDebug (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] > Task :jni:bundleLibRuntimeToDirDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni:bundleLibRuntimeToDirDebug' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni:bundleLibRuntimeToDirDebug' as it is up-to-date.
+[        ] DexingOutputSplitTransform (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] work action resolve bundleLibRuntimeToDirDebug (project :jni) (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] ClassesDirToClassesTransform (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] Resolve mutations for :app:mergeProjectDexDebug (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] DexingNoClasspathTransform (Thread[#911,Execution worker Thread 2,5,main]) started.
+[        ] :app:mergeProjectDexDebug (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Transform bundleLibRuntimeToDirDebug (project :jni) with DexingNoClasspathTransform
+[        ] Caching disabled for DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/jni/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug because:
+[        ]   Build cache is disabled
+[        ] Skipping DexingNoClasspathTransform: /home/emanuele/flutter/crypto_tracker/build/jni/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug as it is up-to-date.
+[        ] DexingOutputSplitTransform (Thread[#916,Execution worker Thread 7,5,main]) started.
+[        ] > Task :app:mergeProjectDexDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeProjectDexDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:mergeProjectDexDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:mergeLibDexDebug (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :app:mergeLibDexDebug (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :app:mergeLibDexDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeLibDexDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:mergeLibDexDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:configureCMakeDebug[arm64-v8a] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :app:configureCMakeDebug[arm64-v8a] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :app:configureCMakeDebug[arm64-v8a]
+[        ] Caching disabled for task ':app:configureCMakeDebug[arm64-v8a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeDebug[arm64-v8a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|arm64-v8a : Start JSON generation. Platform version: 24 min SDK version: arm64-v8a
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|arm64-v8a : JSON '/home/emanuele/flutter/crypto_tracker/build/.cxx/debug/1k1va3q1/arm64-v8a/android_gradle_build.json' was up-to-date
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|arm64-v8a : JSON generation completed without problems
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|arm64-v8a : Writing build model to /home/emanuele/flutter/crypto_tracker/build/app/intermediates/cxx/debug/1k1va3q1/logs/arm64-v8a/build_model.json
+[        ] Resolve mutations for :app:buildCMakeDebug[arm64-v8a] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :app:buildCMakeDebug[arm64-v8a] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :app:buildCMakeDebug[arm64-v8a]
+[        ] Caching disabled for task ':app:buildCMakeDebug[arm64-v8a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:buildCMakeDebug[arm64-v8a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[   +1 ms] C/C++: no libraries
+[        ] Resolve mutations for :app:configureCMakeDebug[armeabi-v7a] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :app:configureCMakeDebug[armeabi-v7a] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :app:configureCMakeDebug[armeabi-v7a]
+[        ] Caching disabled for task ':app:configureCMakeDebug[armeabi-v7a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeDebug[armeabi-v7a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|armeabi-v7a : Start JSON generation. Platform version: 24 min SDK version: armeabi-v7a
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|armeabi-v7a : JSON '/home/emanuele/flutter/crypto_tracker/build/.cxx/debug/1k1va3q1/armeabi-v7a/android_gradle_build.json' was up-to-date
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|armeabi-v7a : JSON generation completed without problems
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|armeabi-v7a : Writing build model to /home/emanuele/flutter/crypto_tracker/build/app/intermediates/cxx/debug/1k1va3q1/logs/armeabi-v7a/build_model.json
+[        ] Resolve mutations for :app:buildCMakeDebug[armeabi-v7a] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :app:buildCMakeDebug[armeabi-v7a] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :app:buildCMakeDebug[armeabi-v7a]
+[        ] Caching disabled for task ':app:buildCMakeDebug[armeabi-v7a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:buildCMakeDebug[armeabi-v7a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: no libraries
+[        ] Resolve mutations for :app:configureCMakeDebug[x86_64] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :app:configureCMakeDebug[x86_64] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :app:configureCMakeDebug[x86_64]
+[        ] Caching disabled for task ':app:configureCMakeDebug[x86_64]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeDebug[x86_64]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|x86_64 : Start JSON generation. Platform version: 24 min SDK version: x86_64
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|x86_64 : JSON '/home/emanuele/flutter/crypto_tracker/build/.cxx/debug/1k1va3q1/x86_64/android_gradle_build.json' was up-to-date
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|x86_64 : JSON generation completed without problems
+[        ] C/C++: /home/emanuele/sviluppo/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt debug|x86_64 : Writing build model to /home/emanuele/flutter/crypto_tracker/build/app/intermediates/cxx/debug/1k1va3q1/logs/x86_64/build_model.json
+[        ] Resolve mutations for :app:buildCMakeDebug[x86_64] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :app:buildCMakeDebug[x86_64] (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :app:buildCMakeDebug[x86_64]
+[        ] Caching disabled for task ':app:buildCMakeDebug[x86_64]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:buildCMakeDebug[x86_64]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: no libraries
+[        ] Resolve mutations for :app:copyJniLibsflutterBuildDebug (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :app:copyJniLibsflutterBuildDebug (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :app:copyJniLibsflutterBuildDebug NO-SOURCE
+[        ] Skipping task ':app:copyJniLibsflutterBuildDebug' as it has no source files and no previous output files.
+[        ] Resolve mutations for :app:mergeDebugJniLibFolders (Thread[#913,Execution worker Thread 4,5,main]) started.
+[   +1 ms] :app:mergeDebugJniLibFolders (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :app:mergeDebugJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeDebugJniLibFolders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':app:mergeDebugJniLibFolders' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:mergeDebugJniLibFolders (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :flutter_secure_storage:mergeDebugJniLibFolders (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :flutter_secure_storage:mergeDebugJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:mergeDebugJniLibFolders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_secure_storage:mergeDebugJniLibFolders' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:mergeDebugNativeLibs (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] :flutter_secure_storage:mergeDebugNativeLibs (Thread[#913,Execution worker Thread 4,5,main]) started.
+[        ] > Task :flutter_secure_storage:mergeDebugNativeLibs NO-SOURCE
+[        ] Skipping task ':flutter_secure_storage:mergeDebugNativeLibs' as it has no source files and no previous output files.
+[        ] Resolve mutations for :flutter_secure_storage:copyDebugJniLibsProjectOnly (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :flutter_secure_storage:copyDebugJniLibsProjectOnly (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :flutter_secure_storage:copyDebugJniLibsProjectOnly UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:copyDebugJniLibsProjectOnly' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':flutter_secure_storage:copyDebugJniLibsProjectOnly' as it is up-to-date.
+[        ] work action resolve jni (project :flutter_secure_storage) (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] Resolve mutations for :jni:preProfileBuild (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:preProfileBuild (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:preProfileBuild UP-TO-DATE
+[        ] Skipping task ':jni:preProfileBuild' as it has no actions.
+[        ] Resolve mutations for :jni:configureCMakeDebug[arm64-v8a] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:configureCMakeDebug[arm64-v8a] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:configureCMakeDebug[arm64-v8a]
+[        ] Caching disabled for task ':jni:configureCMakeDebug[arm64-v8a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':jni:configureCMakeDebug[arm64-v8a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|arm64-v8a : Start JSON generation. Platform version: 21 min SDK version: arm64-v8a
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|arm64-v8a : JSON '/home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/arm64-v8a/android_gradle_build.json' was up-to-date
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|arm64-v8a : JSON generation completed without problems
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|arm64-v8a : Writing build model to /home/emanuele/flutter/crypto_tracker/build/jni/intermediates/cxx/Debug/5c4v1m11/logs/arm64-v8a/build_model.json
+[        ] Resolve mutations for :jni:buildCMakeDebug[arm64-v8a] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:buildCMakeDebug[arm64-v8a] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:buildCMakeDebug[arm64-v8a]
+[        ] Caching disabled for task ':jni:buildCMakeDebug[arm64-v8a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':jni:buildCMakeDebug[arm64-v8a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: evaluate library jni (arm64-v8a)
+[        ] C/C++: building target library jni because no targets are specified.
+[        ] C/C++: about to build targets jni
+[        ] C/C++: Build jni
+[        ] C/C++: /home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja \
+[        ]   -C \
+[        ]   /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/arm64-v8a \
+[        ]   jni
+[        ] Starting process 'command '/home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja''. Working directory: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android Command: /home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja -C /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/arm64-v8a jni
+[        ] Successfully started process 'command '/home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja''
+[        ] C/C++: Received process result: 0
+[        ] C/C++: check expected build outputs
+[        ] C/C++: build complete
+[        ] Resolve mutations for :jni:configureCMakeDebug[armeabi-v7a] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:configureCMakeDebug[armeabi-v7a] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:configureCMakeDebug[armeabi-v7a]
+[        ] Caching disabled for task ':jni:configureCMakeDebug[armeabi-v7a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':jni:configureCMakeDebug[armeabi-v7a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|armeabi-v7a : Start JSON generation. Platform version: 21 min SDK version: armeabi-v7a
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|armeabi-v7a : JSON '/home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/armeabi-v7a/android_gradle_build.json' was up-to-date
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|armeabi-v7a : JSON generation completed without problems
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|armeabi-v7a : Writing build model to /home/emanuele/flutter/crypto_tracker/build/jni/intermediates/cxx/Debug/5c4v1m11/logs/armeabi-v7a/build_model.json
+[        ] Resolve mutations for :jni:buildCMakeDebug[armeabi-v7a] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:buildCMakeDebug[armeabi-v7a] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:buildCMakeDebug[armeabi-v7a]
+[        ] Caching disabled for task ':jni:buildCMakeDebug[armeabi-v7a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':jni:buildCMakeDebug[armeabi-v7a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: evaluate library jni (armeabi-v7a)
+[        ] C/C++: building target library jni because no targets are specified.
+[        ] C/C++: about to build targets jni
+[        ] C/C++: Build jni
+[        ] C/C++: /home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja \
+[        ]   -C \
+[        ]   /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/armeabi-v7a \
+[        ]   jni
+[        ] Starting process 'command '/home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja''. Working directory: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android Command: /home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja -C /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/armeabi-v7a jni
+[        ] Successfully started process 'command '/home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja''
+[        ] C/C++: Received process result: 0
+[        ] C/C++: check expected build outputs
+[        ] C/C++: build complete
+[        ] Resolve mutations for :jni:configureCMakeDebug[x86] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:configureCMakeDebug[x86] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[  +63 ms] > Task :jni:configureCMakeDebug[x86]
+[        ] Caching disabled for task ':jni:configureCMakeDebug[x86]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':jni:configureCMakeDebug[x86]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|x86 : Start JSON generation. Platform version: 21 min SDK version: x86
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|x86 : JSON '/home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/x86/android_gradle_build.json' was up-to-date
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|x86 : JSON generation completed without problems
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|x86 : Writing build model to /home/emanuele/flutter/crypto_tracker/build/jni/intermediates/cxx/Debug/5c4v1m11/logs/x86/build_model.json
+[        ] Resolve mutations for :jni:buildCMakeDebug[x86] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:buildCMakeDebug[x86] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:buildCMakeDebug[x86]
+[        ] Caching disabled for task ':jni:buildCMakeDebug[x86]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':jni:buildCMakeDebug[x86]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: evaluate library jni (x86)
+[        ] C/C++: building target library jni because no targets are specified.
+[        ] C/C++: about to build targets jni
+[        ] C/C++: Build jni
+[        ] C/C++: /home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja \
+[        ]   -C \
+[        ]   /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/x86 \
+[        ]   jni
+[        ] Starting process 'command '/home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja''. Working directory: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android Command: /home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja -C /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/x86 jni
+[        ] Successfully started process 'command '/home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja''
+[        ] C/C++: Received process result: 0
+[        ] C/C++: check expected build outputs
+[        ] C/C++: build complete
+[        ] Resolve mutations for :jni:configureCMakeDebug[x86_64] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:configureCMakeDebug[x86_64] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:configureCMakeDebug[x86_64]
+[        ] Caching disabled for task ':jni:configureCMakeDebug[x86_64]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':jni:configureCMakeDebug[x86_64]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|x86_64 : Start JSON generation. Platform version: 21 min SDK version: x86_64
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|x86_64 : JSON '/home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/x86_64/android_gradle_build.json' was up-to-date
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|x86_64 : JSON generation completed without problems
+[        ] C/C++: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/src/CMakeLists.txt profile|x86_64 : Writing build model to /home/emanuele/flutter/crypto_tracker/build/jni/intermediates/cxx/Debug/5c4v1m11/logs/x86_64/build_model.json
+[        ] Resolve mutations for :jni:buildCMakeDebug[x86_64] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:buildCMakeDebug[x86_64] (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:buildCMakeDebug[x86_64]
+[   +7 ms] Caching disabled for task ':jni:buildCMakeDebug[x86_64]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':jni:buildCMakeDebug[x86_64]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: evaluate library jni (x86_64)
+[        ] C/C++: building target library jni because no targets are specified.
+[        ] C/C++: about to build targets jni
+[        ] C/C++: Build jni
+[        ] C/C++: /home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja \
+[        ]   -C \
+[        ]   /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/x86_64 \
+[        ]   jni
+[        ] Starting process 'command '/home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja''. Working directory: /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android Command: /home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja -C /home/emanuele/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/5c4v1m11/x86_64 jni
+[        ] Successfully started process 'command '/home/emanuele/Android/Sdk/cmake/3.22.1/bin/ninja''
+[        ] C/C++: Received process result: 0
+[        ] C/C++: check expected build outputs
+[        ] C/C++: build complete
+[        ] Resolve mutations for :jni:mergeDebugJniLibFolders (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:mergeDebugJniLibFolders (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:mergeDebugJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':jni:mergeDebugJniLibFolders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni:mergeDebugJniLibFolders' as it is up-to-date.
+[        ] Resolve mutations for :jni:mergeDebugNativeLibs (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:mergeDebugNativeLibs (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:mergeDebugNativeLibs UP-TO-DATE
+[        ] Caching disabled for task ':jni:mergeDebugNativeLibs' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni:mergeDebugNativeLibs' as it is up-to-date.
+[        ] Resolve mutations for :jni:copyDebugJniLibsProjectOnly (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] :jni:copyDebugJniLibsProjectOnly (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] > Task :jni:copyDebugJniLibsProjectOnly UP-TO-DATE
+[        ] Caching disabled for task ':jni:copyDebugJniLibsProjectOnly' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni:copyDebugJniLibsProjectOnly' as it is up-to-date.
+[        ] work action resolve jni (project :jni) (Thread[#914,Execution worker Thread 5,5,main]) started.
+[        ] Resolve mutations for :jni_flutter:mergeDebugJniLibFolders (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:mergeDebugJniLibFolders (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:mergeDebugJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:mergeDebugJniLibFolders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni_flutter:mergeDebugJniLibFolders' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:mergeDebugNativeLibs (Thread[#915,Execution worker Thread 6,5,main]) started.
+[   +7 ms] :jni_flutter:mergeDebugNativeLibs (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:mergeDebugNativeLibs NO-SOURCE
+[        ] Skipping task ':jni_flutter:mergeDebugNativeLibs' as it has no source files and no previous output files.
+[        ] Resolve mutations for :jni_flutter:copyDebugJniLibsProjectOnly (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:copyDebugJniLibsProjectOnly (Thread[#915,Execution worker Thread 6,5,main]) started.
+[   +3 ms] > Task :jni_flutter:copyDebugJniLibsProjectOnly UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:copyDebugJniLibsProjectOnly' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni_flutter:copyDebugJniLibsProjectOnly' as it is up-to-date.
+[        ] work action resolve jni (project :jni_flutter) (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] Resolve mutations for :app:mergeDebugNativeLibs (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:mergeDebugNativeLibs (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:mergeDebugNativeLibs UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeDebugNativeLibs' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:mergeDebugNativeLibs' as it is up-to-date.
+[        ] Resolve mutations for :app:stripDebugDebugSymbols (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:stripDebugDebugSymbols (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:stripDebugDebugSymbols UP-TO-DATE
+[        ] Caching disabled for task ':app:stripDebugDebugSymbols' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:stripDebugDebugSymbols' as it is up-to-date.
+[        ] Resolve mutations for :app:validateSigningDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:validateSigningDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:validateSigningDebug UP-TO-DATE
+[        ] Caching disabled for task ':app:validateSigningDebug' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:validateSigningDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:writeDebugAppMetadata (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:writeDebugAppMetadata (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:writeDebugAppMetadata UP-TO-DATE
+[        ] Caching disabled for task ':app:writeDebugAppMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:writeDebugAppMetadata' as it is up-to-date.
+[        ] Resolve mutations for :app:writeDebugSigningConfigVersions (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:writeDebugSigningConfigVersions (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+[        ] Caching disabled for task ':app:writeDebugSigningConfigVersions' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:writeDebugSigningConfigVersions' as it is up-to-date.
+[        ] Resolve mutations for :app:packageDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:packageDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:packageDebug UP-TO-DATE
+[        ] Custom actions are attached to task ':app:packageDebug'.
+[        ] Caching disabled for task ':app:packageDebug' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:packageDebug' as it is up-to-date.
+[        ] Resolve mutations for :app:createDebugApkListingFileRedirect (Thread[#915,Execution worker Thread 6,5,main]) started.
+[   +4 ms] :app:createDebugApkListingFileRedirect (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+[        ] Caching disabled for task ':app:createDebugApkListingFileRedirect' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:createDebugApkListingFileRedirect' as it is up-to-date.
+[        ] Resolve mutations for :app:assembleDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :app:assembleDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[  +63 ms] > Task :app:assembleDebug
+[        ] Caching disabled for task ':app:assembleDebug' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:assembleDebug' is not up-to-date because:
+[        ]   Task has not declared any outputs despite executing actions.
+[        ] Resolve mutations for :flutter_secure_storage:stripDebugDebugSymbols (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:stripDebugDebugSymbols (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:stripDebugDebugSymbols NO-SOURCE
+[        ] Skipping task ':flutter_secure_storage:stripDebugDebugSymbols' as it has no source files and no previous output files.
+[        ] Resolve mutations for :flutter_secure_storage:copyDebugJniLibsProjectAndLocalJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:copyDebugJniLibsProjectAndLocalJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:copyDebugJniLibsProjectAndLocalJars' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':flutter_secure_storage:copyDebugJniLibsProjectAndLocalJars' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:extractDebugAnnotations (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:extractDebugAnnotations (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:extractDebugAnnotations UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:extractDebugAnnotations' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:extractDebugAnnotations' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:extractDeepLinksForAarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:extractDeepLinksForAarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:extractDeepLinksForAarDebug UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:extractDeepLinksForAarDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:extractDeepLinksForAarDebug' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:mergeDebugGeneratedProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:mergeDebugGeneratedProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:mergeDebugGeneratedProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:mergeDebugGeneratedProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_secure_storage:mergeDebugGeneratedProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:mergeDebugConsumerProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:mergeDebugConsumerProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:mergeDebugConsumerProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:mergeDebugConsumerProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_secure_storage:mergeDebugConsumerProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:prepareDebugArtProfile (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:prepareDebugArtProfile (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:prepareDebugArtProfile UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:prepareDebugArtProfile' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':flutter_secure_storage:prepareDebugArtProfile' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:prepareLintJarForPublish (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:prepareLintJarForPublish (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:prepareLintJarForPublish UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:prepareLintJarForPublish' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':flutter_secure_storage:prepareLintJarForPublish' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:mergeDebugJavaResource (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:mergeDebugJavaResource (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:mergeDebugJavaResource UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:mergeDebugJavaResource' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':flutter_secure_storage:mergeDebugJavaResource' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:syncDebugLibJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:syncDebugLibJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:syncDebugLibJars UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:syncDebugLibJars' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_secure_storage:syncDebugLibJars' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:bundleDebugAar (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:bundleDebugAar (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:bundleDebugAar UP-TO-DATE
+[        ] Caching disabled for task ':flutter_secure_storage:bundleDebugAar' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':flutter_secure_storage:bundleDebugAar' as it is up-to-date.
+[        ] Resolve mutations for :flutter_secure_storage:assembleDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :flutter_secure_storage:assembleDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :flutter_secure_storage:assembleDebug UP-TO-DATE
+[        ] Skipping task ':flutter_secure_storage:assembleDebug' as it has no actions.
+[        ] Resolve mutations for :jni:stripDebugDebugSymbols (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:stripDebugDebugSymbols (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:stripDebugDebugSymbols UP-TO-DATE
+[        ] Caching disabled for task ':jni:stripDebugDebugSymbols' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni:stripDebugDebugSymbols' as it is up-to-date.
+[        ] Resolve mutations for :jni:copyDebugJniLibsProjectAndLocalJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:copyDebugJniLibsProjectAndLocalJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+[        ] Caching disabled for task ':jni:copyDebugJniLibsProjectAndLocalJars' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni:copyDebugJniLibsProjectAndLocalJars' as it is up-to-date.
+[        ] Resolve mutations for :jni:extractDebugAnnotations (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:extractDebugAnnotations (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:extractDebugAnnotations UP-TO-DATE
+[        ] Caching disabled for task ':jni:extractDebugAnnotations' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:extractDebugAnnotations' as it is up-to-date.
+[        ] Resolve mutations for :jni:extractDeepLinksForAarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:extractDeepLinksForAarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:extractDeepLinksForAarDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni:extractDeepLinksForAarDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:extractDeepLinksForAarDebug' as it is up-to-date.
+[        ] Resolve mutations for :jni:mergeDebugGeneratedProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:mergeDebugGeneratedProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:mergeDebugGeneratedProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':jni:mergeDebugGeneratedProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni:mergeDebugGeneratedProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :jni:mergeDebugConsumerProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:mergeDebugConsumerProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:mergeDebugConsumerProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':jni:mergeDebugConsumerProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni:mergeDebugConsumerProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :jni:prepareDebugArtProfile (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:prepareDebugArtProfile (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:prepareDebugArtProfile UP-TO-DATE
+[        ] Caching disabled for task ':jni:prepareDebugArtProfile' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni:prepareDebugArtProfile' as it is up-to-date.
+[        ] Resolve mutations for :jni:prepareLintJarForPublish (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:prepareLintJarForPublish (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:prepareLintJarForPublish UP-TO-DATE
+[        ] Caching disabled for task ':jni:prepareLintJarForPublish' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni:prepareLintJarForPublish' as it is up-to-date.
+[        ] Resolve mutations for :jni:mergeDebugJavaResource (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:mergeDebugJavaResource (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:mergeDebugJavaResource UP-TO-DATE
+[        ] Caching disabled for task ':jni:mergeDebugJavaResource' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni:mergeDebugJavaResource' as it is up-to-date.
+[        ] Resolve mutations for :jni:syncDebugLibJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:syncDebugLibJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:syncDebugLibJars UP-TO-DATE
+[        ] Caching disabled for task ':jni:syncDebugLibJars' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni:syncDebugLibJars' as it is up-to-date.
+[        ] Resolve mutations for :jni:bundleDebugAar (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:bundleDebugAar (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:bundleDebugAar UP-TO-DATE
+[        ] Caching disabled for task ':jni:bundleDebugAar' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni:bundleDebugAar' as it is up-to-date.
+[        ] Resolve mutations for :jni:assembleDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni:assembleDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni:assembleDebug UP-TO-DATE
+[        ] Skipping task ':jni:assembleDebug' as it has no actions.
+[        ] Resolve mutations for :jni_flutter:stripDebugDebugSymbols (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:stripDebugDebugSymbols (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:stripDebugDebugSymbols NO-SOURCE
+[        ] Skipping task ':jni_flutter:stripDebugDebugSymbols' as it has no source files and no previous output files.
+[        ] Resolve mutations for :jni_flutter:copyDebugJniLibsProjectAndLocalJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:copyDebugJniLibsProjectAndLocalJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:copyDebugJniLibsProjectAndLocalJars' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni_flutter:copyDebugJniLibsProjectAndLocalJars' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:extractDebugAnnotations (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:extractDebugAnnotations (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:extractDebugAnnotations UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:extractDebugAnnotations' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:extractDebugAnnotations' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:extractDeepLinksForAarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:extractDeepLinksForAarDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:extractDeepLinksForAarDebug UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:extractDeepLinksForAarDebug' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:extractDeepLinksForAarDebug' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:mergeDebugGeneratedProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:mergeDebugGeneratedProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:mergeDebugGeneratedProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:mergeDebugGeneratedProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni_flutter:mergeDebugGeneratedProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:mergeDebugConsumerProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:mergeDebugConsumerProguardFiles (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:mergeDebugConsumerProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:mergeDebugConsumerProguardFiles' because:
+[   +1 ms]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':jni_flutter:mergeDebugConsumerProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:prepareDebugArtProfile (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:prepareDebugArtProfile (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:prepareDebugArtProfile UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:prepareDebugArtProfile' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni_flutter:prepareDebugArtProfile' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:prepareLintJarForPublish (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:prepareLintJarForPublish (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:prepareLintJarForPublish UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:prepareLintJarForPublish' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni_flutter:prepareLintJarForPublish' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:mergeDebugJavaResource (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:mergeDebugJavaResource (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:mergeDebugJavaResource UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:mergeDebugJavaResource' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni_flutter:mergeDebugJavaResource' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:syncDebugLibJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:syncDebugLibJars (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:syncDebugLibJars UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:syncDebugLibJars' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':jni_flutter:syncDebugLibJars' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:bundleDebugAar (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:bundleDebugAar (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:bundleDebugAar UP-TO-DATE
+[        ] Caching disabled for task ':jni_flutter:bundleDebugAar' because:
+[   +2 ms]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':jni_flutter:bundleDebugAar' as it is up-to-date.
+[        ] Resolve mutations for :jni_flutter:assembleDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] :jni_flutter:assembleDebug (Thread[#915,Execution worker Thread 6,5,main]) started.
+[        ] > Task :jni_flutter:assembleDebug UP-TO-DATE
+[        ] Skipping task ':jni_flutter:assembleDebug' as it has no actions.
+[        ] Build d2195cba-8d78-45af-815a-ebd30aa529ed is closed
+[  +33 ms] Build 04961840-d064-4586-b3a4-499e5e2163fa is closed
+[        ] [Incubating] Problems report is available at: file:///home/emanuele/flutter/crypto_tracker/build/reports/problems/problems-report.html
+[        ] Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+[        ] You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+[        ] For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+[        ] BUILD SUCCESSFUL in 3s
+[        ] 147 actionable tasks: 19 executed, 128 up-to-date
+[  +11 ms] Running Gradle task 'assembleDebug'... (completed in 3.2s)
+[   +3 ms] Calculate SHA1: LocalDirectory: '/home/emanuele/flutter/crypto_tracker/build/app/outputs/flutter-apk'/app-debug.apk
+[ +598 ms] ✓ Built build/app/outputs/flutter-apk/app-debug.apk
+[   +1 ms] executing: /home/emanuele/Android/Sdk/build-tools/36.1.0/aapt dump xmltree /home/emanuele/flutter/crypto_tracker/build/app/outputs/flutter-apk/app-debug.apk AndroidManifest.xml
+[   +7 ms] Exit code 0 from: /home/emanuele/Android/Sdk/build-tools/36.1.0/aapt dump xmltree /home/emanuele/flutter/crypto_tracker/build/app/outputs/flutter-apk/app-debug.apk AndroidManifest.xml
+[        ] N: android=http://schemas.android.com/apk/res/android
+             E: manifest (line=2)
+               A: android:versionCode(0x0101021b)=(type 0x10)0x1
+               A: android:versionName(0x0101021c)="1.0.0" (Raw: "1.0.0")
+               A: android:compileSdkVersion(0x01010572)=(type 0x10)0x24
+               A: android:compileSdkVersionCodename(0x01010573)="16" (Raw: "16")
+               A: package="com.example.crypto_tracker" (Raw: "com.example.crypto_tracker")
+               A: platformBuildVersionCode=(type 0x10)0x24
+               A: platformBuildVersionName=(type 0x10)0x10
+               E: uses-sdk (line=7)
+                 A: android:minSdkVersion(0x0101020c)=(type 0x10)0x18
+                 A: android:targetSdkVersion(0x01010270)=(type 0x10)0x24
+               E: uses-permission (line=15)
+                 A: android:name(0x01010003)="android.permission.INTERNET" (Raw: "android.permission.INTERNET")
+               E: queries (line=23)
+                 E: intent (line=24)
+                   E: action (line=25)
+                     A: android:name(0x01010003)="android.intent.action.PROCESS_TEXT" (Raw: "android.intent.action.PROCESS_TEXT")
+                   E: data (line=27)
+                     A: android:mimeType(0x01010026)="text/plain" (Raw: "text/plain")
+               E: permission (line=31)
+                 A: android:name(0x01010003)="com.example.crypto_tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" (Raw: "com.example.crypto_tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION")
+                 A: android:protectionLevel(0x01010009)=(type 0x11)0x2
+               E: uses-permission (line=35)
+                 A: android:name(0x01010003)="com.example.crypto_tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" (Raw: "com.example.crypto_tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION")
+               E: application (line=37)
+                 A: android:label(0x01010001)="crypto_tracker" (Raw: "crypto_tracker")
+                 A: android:icon(0x01010002)=@0x7f0a0000
+                 A: android:name(0x01010003)="android.app.Application" (Raw: "android.app.Application")
+                 A: android:debuggable(0x0101000f)=(type 0x12)0xffffffff
+                 A: android:extractNativeLibs(0x010104ea)=(type 0x12)0x0
+                 A: android:appComponentFactory(0x0101057a)="androidx.core.app.CoreComponentFactory" (Raw: "androidx.core.app.CoreComponentFactory")
+                 E: activity (line=44)
+                   A: android:theme(0x01010000)=@0x7f0c0000
+                   A: android:name(0x01010003)="com.example.crypto_tracker.MainActivity" (Raw: "com.example.crypto_tracker.MainActivity")
+                   A: android:exported(0x01010010)=(type 0x12)0xffffffff
+                   A: android:taskAffinity(0x01010012)="" (Raw: "")
+                   A: android:launchMode(0x0101001d)=(type 0x10)0x1
+                   A: android:configChanges(0x0101001f)=(type 0x11)0x40003fb4
+                   A: android:windowSoftInputMode(0x0101022b)=(type 0x11)0x10
+                   A: android:hardwareAccelerated(0x010102d3)=(type 0x12)0xffffffff
+                   E: meta-data (line=60)
+                     A: android:name(0x01010003)="io.flutter.embedding.android.NormalTheme" (Raw: "io.flutter.embedding.android.NormalTheme")
+                     A: android:resource(0x01010025)=@0x7f0c0001
+                   E: intent-filter (line=64)
+                     E: action (line=65)
+                       A: android:name(0x01010003)="android.intent.action.MAIN" (Raw: "android.intent.action.MAIN")
+                     E: category (line=67)
+                       A: android:name(0x01010003)="android.intent.category.LAUNCHER" (Raw: "android.intent.category.LAUNCHER")
+                 E: meta-data (line=74)
+                   A: android:name(0x01010003)="flutterEmbedding" (Raw: "flutterEmbedding")
+                   A: android:value(0x01010024)=(type 0x10)0x2
+                 E: uses-library (line=78)
+                   A: android:name(0x01010003)="androidx.window.extensions" (Raw: "androidx.window.extensions")
+                   A: android:required(0x0101028e)=(type 0x12)0x0
+                 E: uses-library (line=81)
+                   A: android:name(0x01010003)="androidx.window.sidecar" (Raw: "androidx.window.sidecar")
+                   A: android:required(0x0101028e)=(type 0x12)0x0
+                 E: provider (line=85)
+                   A: android:name(0x01010003)="androidx.startup.InitializationProvider" (Raw: "androidx.startup.InitializationProvider")
+                   A: android:exported(0x01010010)=(type 0x12)0x0
+                   A: android:authorities(0x01010018)="com.example.crypto_tracker.androidx-startup" (Raw: "com.example.crypto_tracker.androidx-startup")
+                   E: meta-data (line=89)
+                     A: android:name(0x01010003)="androidx.lifecycle.ProcessLifecycleInitializer" (Raw: "androidx.lifecycle.ProcessLifecycleInitializer")
+                     A: android:value(0x01010024)="androidx.startup" (Raw: "androidx.startup")
+                   E: meta-data (line=92)
+                     A: android:name(0x01010003)="androidx.profileinstaller.ProfileInstallerInitializer" (Raw: "androidx.profileinstaller.ProfileInstallerInitializer")
+                     A: android:value(0x01010024)="androidx.startup" (Raw: "androidx.startup")
+                 E: receiver (line=97)
+                   A: android:name(0x01010003)="androidx.profileinstaller.ProfileInstallReceiver" (Raw: "androidx.profileinstaller.ProfileInstallReceiver")
+                   A: android:permission(0x01010006)="android.permission.DUMP" (Raw: "android.permission.DUMP")
+                   A: android:enabled(0x0101000e)=(type 0x12)0xffffffff
+                   A: android:exported(0x01010010)=(type 0x12)0xffffffff
+                   A: android:directBootAware(0x01010505)=(type 0x12)0x0
+                   E: intent-filter (line=103)
+                     E: action (line=104)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.INSTALL_PROFILE" (Raw: "androidx.profileinstaller.action.INSTALL_PROFILE")
+                   E: intent-filter (line=106)
+                     E: action (line=107)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.SKIP_FILE" (Raw: "androidx.profileinstaller.action.SKIP_FILE")
+                   E: intent-filter (line=109)
+                     E: action (line=110)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.SAVE_PROFILE" (Raw: "androidx.profileinstaller.action.SAVE_PROFILE")
+                   E: intent-filter (line=112)
+                     E: action (line=113)
+                       A: android:name(0x01010003)="androidx.profileinstaller.action.BENCHMARK_OPERATION" (Raw: "androidx.profileinstaller.action.BENCHMARK_OPERATION")
+[   +4 ms] Stopping app 'app-debug.apk' on Pixel 7.
+[        ] executing: /home/emanuele/Android/Sdk/platform-tools/adb -s 36151FDH2001R4 shell am force-stop com.example.crypto_tracker
+[ +101 ms] Installing APK.
+[   +2 ms] Installing build/app/outputs/flutter-apk/app-debug.apk...
+[        ] executing: /home/emanuele/Android/Sdk/platform-tools/adb -s 36151FDH2001R4 install -t -r /home/emanuele/flutter/crypto_tracker/build/app/outputs/flutter-apk/app-debug.apk
+[+4113 ms] Performing Streamed Install
+           Success
+[        ] Installing build/app/outputs/flutter-apk/app-debug.apk... (completed in 4.1s)
+[   +1 ms] executing: /home/emanuele/Android/Sdk/platform-tools/adb -s 36151FDH2001R4 shell echo -n e86a1fe5baad2a0138de504e023295fad9ac88b4 > /data/local/tmp/sky.com.example.crypto_tracker.sha1
+[  +28 ms] executing: /home/emanuele/Android/Sdk/platform-tools/adb -s 36151FDH2001R4 shell -x logcat -v time -t 1
+[  +92 ms] --------- beginning of main
+           06-05 13:18:56.590 W/ParceledListSlice( 1416): Element #19 is 22208 bytes.
+[  +17 ms] executing: /home/emanuele/Android/Sdk/platform-tools/adb -s 36151FDH2001R4 shell am start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x20000000 --ez enable-dart-profiling true --ez enable-checked-mode true --ez verify-entry-points true com.example.crypto_tracker/com.example.crypto_tracker.MainActivity
+[  +89 ms] Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x20000000 cmp=com.example.crypto_tracker/.MainActivity (has extras) }
+[        ] Waiting for VM Service port to be available...
+[ +233 ms] I/FlutterActivityAndFragmentDelegate(11043): If you are attempting to set --enable-dart-profiling via Intent extras to launch a Flutter component outside of using the Flutter CLI, note that support for setting engine flags on Android via Intent will soon be dropped; see https://github.com/flutter/flutter/issues/180686 for more information on this breaking change. To migrate, set --enable-dart-profiling or any other flags specified via Intent extras on the command line instead or see https://github.com/flutter/flutter/blob/main/docs/engine/Flutter-Android-Engine-Flags.md for alternative methods.
+[  +10 ms] D/FlutterJNI(11043): Beginning load of flutter...
+[  +16 ms] D/FlutterJNI(11043): flutter (null) was loaded normally!
+[ +315 ms] I/flutter (11043): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+[  +42 ms] VM Service URL on device: http://127.0.0.1:34623/i027L8edrIc=/
+[   +1 ms] executing: /home/emanuele/Android/Sdk/platform-tools/adb -s 36151FDH2001R4 forward tcp:0 tcp:34623
+[  +15 ms] 33941
+[        ] Forwarded host port 33941 to device port 34623 for VM Service
+[   +5 ms] Caching compiled dill
+[  +70 ms] Connecting to service protocol: http://127.0.0.1:33941/i027L8edrIc=/
+[  +50 ms] D/FlutterRenderer(11043): Width is zero. 0,0
+[ +164 ms] Launching a Dart Developer Service (DDS) instance at http://127.0.0.1:0, connecting to VM service at http://127.0.0.1:33941/i027L8edrIc=/.
+[ +523 ms] Successfully connected to service protocol: http://127.0.0.1:33941/i027L8edrIc=/
+[ +267 ms] DevFS: Creating new filesystem on the device (null)
+[  +59 ms] DevFS: Created new filesystem on the device (file:///data/user/0/com.example.crypto_tracker/code_cache/crypto_trackerSGIRMN/crypto_tracker/)
+[   +2 ms] Updating assets for android
+[        ] runHooks() with {TargetFile: /home/emanuele/flutter/crypto_tracker/lib/main.dart, BuildMode: debug} and TargetPlatform.android_arm64
+[        ] runHooks() - will perform dart build
+[  +19 ms] Building native assets for android_arm64.
+[  +22 ms] input.json contents:
+           {
+             "assets": {},
+             "config": {
+               "build_asset_types": [],
+               "linking_enabled": false
+             },
+             "out_dir_shared": "/home/emanuele/flutter/crypto_tracker/.dart_tool/hooks_runner/shared/objective_c/build/",
+             "out_file": "/home/emanuele/flutter/crypto_tracker/.dart_tool/hooks_runner/objective_c/337ce265dc/output.json",
+             "package_name": "objective_c",
+             "package_root": "/home/emanuele/.pub-cache/hosted/pub.dev/objective_c-9.4.1/",
+             "user_defines": {}
+           }
+[   +3 ms] output.json contents:
+           {
+             "assets_for_linking": {},
+             "status": "success",
+             "timestamp": "2026-06-05 13:17:54.000"
+           }
+[   +1 ms] Skipping build for objective_c in /home/emanuele/flutter/crypto_tracker/.dart_tool/hooks_runner/objective_c/337ce265dc/. Last build on 2026-06-05 13:17:54.000.
+[   +3 ms] Building native assets for android_arm64 done.
+[        ] runHooks() - done
+[  +50 ms] Syncing files to device Pixel 7...
+[   +1 ms] Compiling dart to kernel with 0 updated files
+[        ] Processing bundle.
+[        ] <- recompile package:crypto_tracker/main.dart cc7dc953-b2cf-4af8-9b58-8e400218b962
+[        ] <- cc7dc953-b2cf-4af8-9b58-8e400218b962
+[   +1 ms] Bundle processing done.
+[  +57 ms] Updating files.
+[        ] Pending asset builds completed. Writing dirty entries.
+[        ] DevFS: Sync finished
+[        ] Syncing files to device Pixel 7... (completed in 62ms)
+[        ] Synced 0.0MB.
+[        ] <- accept
+[  +47 ms] Connected to _flutterView/0xb40000736fd2c010.
+[   +3 ms] Flutter run key commands.
+[   +2 ms] r Hot reload. 🔥🔥🔥
+[   +1 ms] R Hot restart.
+[        ] h List all available interactive commands.
+[        ] d Detach (terminate "flutter run" but leave application running).
+[        ] c Clear the screen
+[        ] q Quit (terminate the application on the device).
+[   +1 ms] A Dart VM Service on Pixel 7 is available at: http://127.0.0.1:35335/GfK69v4vuaM=/
+[   +2 ms] The Flutter DevTools debugger and profiler on Pixel 7 is available at: http://127.0.0.1:35335/GfK69v4vuaM=/devtools/?uri=ws://127.0.0.1:35335/GfK69v4vuaM=/ws
