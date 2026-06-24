@@ -50,7 +50,7 @@ A clean, responsive mobile application built with Flutter and Dart to track cryp
 
 ## 🚀 Download and Installation
 
-You can test the application directly on your device without having to build the code from source. Visit the **[Releases](https://github.com/emanuele400tt/explorer-city-app/releases)** section of this repository to download the latest available version.
+You can test the application directly on your device without having to build the code from source. Visit the **[Releases](https://github.com/emanuele400tt/crypto-tracker-app/releases)** section of this repository to download the latest available version.
 
 ### 📱 Android
 1. Download the `crypto-tracker.apk` file to your smartphone.
@@ -111,7 +111,7 @@ Un'applicazione mobile dal design pulito e responsivo, sviluppata con Flutter e 
     
 ## 🚀 Download e Installazione
 
-Puoi testare l'applicazione direttamente sul tuo dispositivo senza dover compilare il codice. Visita la sezione **[Releases](https://github.com/emanuele400tt/explorer-city-app/releases)** di questo repository per scaricare l'ultima versione disponibile.
+Puoi testare l'applicazione direttamente sul tuo dispositivo senza dover compilare il codice. Visita la sezione **[Releases](https://github.com/emanuele400tt/crypto-tracker-app/releases)** di questo repository per scaricare l'ultima versione disponibile.
 
 ### 📱 Android
 1. Scarica il file `crypto-tracker.apk` sul tuo smartphone.
