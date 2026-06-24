@@ -20,10 +20,14 @@ class ThemeProvider extends ChangeNotifier {
 
   /// Loads the saved theme preference from secure storage.
   Future<void> _loadTheme() async {
-    final storedTheme = await _storage.read(key: _storageKey);
-    if (storedTheme != null) {
-      _themeMode = storedTheme == 'light' ? ThemeMode.light : ThemeMode.dark;
-      notifyListeners();
+    try {
+      final storedTheme = await _storage.read(key: _storageKey);
+      if (storedTheme != null) {
+        _themeMode = storedTheme == 'light' ? ThemeMode.light : ThemeMode.dark;
+        notifyListeners();
+      }
+    } catch (e) {
+      debugPrint('Errore nel caricamento del tema: $e');
     }
   }
 

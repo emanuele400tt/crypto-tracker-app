@@ -5,6 +5,7 @@ import 'providers/favorites_provider.dart';
 import 'providers/theme_provider.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
     MultiProvider(
       providers: [
