@@ -35,17 +35,10 @@ A clean, responsive mobile application built with Flutter and Dart to track cryp
 <img src="screenshots/Screenshot_20260623-152603.png" width="250"/> <img src="screenshots/Screenshot_20260623-152606.png" width="250"/> <img src="screenshots/Screenshot_20260623-152610.png" width="250"/> <img src="screenshots/Screenshot_20260623-152619.png" width="250"/> <img src="screenshots/Screenshot_20260623-152622.png" width="250"/> <img src="screenshots/Screenshot_20260623-152629.png" width="250"/> 
 
 ## Linux ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-<img src="screenshots/Screenshot from 2026-06-23 15-15-15.png" width="500"/> 
-<img src="screenshots/Screenshot from 2026-06-23 15-15-23.png" width="500"/> 
-<img src="screenshots/Screenshot from 2026-06-23 15-15-31.png" width="500"/> 
-<img src="screenshots/Screenshot from 2026-06-23 15-15-37.png" width="500"/> 
-<img src="screenshots/Screenshot from 2026-06-23 15-15-44.png" width="500"/> 
-<img src="screenshots/Screenshot from 2026-06-23 15-15-55.png" width="500"/> 
+<img src="screenshots/Screenshot from 2026-06-23 15-15-15.png" width="500"/> <img src="screenshots/Screenshot from 2026-06-23 15-15-23.png" width="500"/> <img src="screenshots/Screenshot from 2026-06-23 15-15-31.png" width="500"/> <img src="screenshots/Screenshot from 2026-06-23 15-15-37.png" width="500"/> <img src="screenshots/Screenshot from 2026-06-23 15-15-44.png" width="500"/> <img src="screenshots/Screenshot from 2026-06-23 15-15-55.png" width="500"/> 
 
 ## Chrome ![Chrome](https://img.shields.io/badge/Google_Chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white)
-<img src="screenshots/Screenshot from 2026-06-23 15-16-12.png" width="500"/> 
-<img src="screenshots/Screenshot from 2026-06-23 15-16-29.png" width="500"/> 
-<img src="screenshots/Screenshot from 2026-06-23 15-16-42.png" width="500"/>
+<img src="screenshots/Screenshot from 2026-06-23 15-16-12.png" width="500"/> <img src="screenshots/Screenshot from 2026-06-23 15-16-29.png" width="500"/> <img src="screenshots/Screenshot from 2026-06-23 15-16-42.png" width="500"/>
 
 
 # Versione Italiana
