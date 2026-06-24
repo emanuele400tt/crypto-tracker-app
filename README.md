@@ -66,11 +66,7 @@ You can test the application directly on your device without having to build the
 ### 🌐 Web Version
 *(Se hai caricato i file su un hosting o su GitHub Pages usa questa riga:)*
 Don't want to download anything? You can try the app directly from your browser! 
-👉 **[Click here to launch the Live Demo](INSERT_SITE_LINK_HERE)**
-
-*(Se invece hai caricato lo zip nella release, usa queste righe:)*
-1. Download the `crypto-tracker-web.zip` archive and extract the folder.
-2. *⚠️ Warning:* Due to modern browser security restrictions (CORS policy), you cannot run the app by simply double-clicking the `index.html` file. You need to serve it via a local web server (e.g., using the *Live Server* extension in VS Code or a Python HTTP server) pointing to the extracted folder.
+👉 **[Click here to launch the Live Demo](https://emanuele400tt.github.io/crypto-tracker-app/)**
 
 
 # Versione Italiana
@@ -127,9 +123,5 @@ Puoi testare l'applicazione direttamente sul tuo dispositivo senza dover compila
 ### 🌐 Versione Web
 *(Se hai caricato i file su un hosting o su GitHub Pages usa questa riga:)*
 Non vuoi scaricare nulla? Puoi provare l'interfaccia dell'app direttamente dal tuo browser! 
-👉 **[Clicca qui per avviare la Live Demo](INSERISCI_QUI_IL_LINK_DEL_SITO)**
+👉 **[Clicca qui per avviare la Live Demo](https://emanuele400tt.github.io/crypto-tracker-app/)**
 
-*(Se invece hai caricato lo zip nella release, usa queste righe:)*
-1. Scarica l'archivio `crypto-tracker-web.zip` ed estrai la cartella.
-2. *⚠️ Attenzione:* A causa delle restrizioni di sicurezza dei browser moderni (CORS), non è possibile eseguire l'app facendo semplicemente doppio click sul file `index.html`. È necessario avviare un server locale (ad es. tramite l'estensione *Live Server* su VS Code o con un server HTTP Python) puntando alla cartella estratta.
-    
