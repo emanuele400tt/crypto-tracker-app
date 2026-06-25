@@ -33,7 +33,7 @@ A clean, responsive mobile application built with Flutter and Dart to track cryp
 ## 🚀 How to run the project
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/emanuele400tt/crypto-tracker-app.git](https://github.com/emanuele400tt/crypto-tracker-app.git)
+   git clone https://github.com/emanuele400tt/crypto-tracker-app.git
 2. Install dependencies 
     ```bash
     flutter pub get
@@ -44,7 +44,7 @@ A clean, responsive mobile application built with Flutter and Dart to track cryp
 
 ## 📌 Project Status
 
-> **Maintenance Notice:** This application is a *showcase* project developed for portfolio and technical demonstration purposes. The source code is complete and the app is fully functional, but the repository is **not actively maintained**. Future changes by external API providers (e.g., weather services) may affect data fetching. Feel free to explore the code or test the app via the releases!
+> **Maintenance Notice:** This application is a *showcase* project developed for portfolio and technical demonstration purposes. The source code is complete and the app is fully functional, but the repository is **not actively maintained**. Future changes by external API providers (e.g., e.g., CoinGecko) may affect data fetching. Feel free to explore the code or test the app via the releases!
 
 ---
 
@@ -103,7 +103,7 @@ Un'applicazione mobile dal design pulito e responsivo, sviluppata con Flutter e 
 * ## 🚀 Come lanciare il progetto
 1. Clonare il repository:
    ```bash
-   git clone [https://github.com/emanuele400tt/crypto-tracker-app.git](https://github.com/emanuele400tt/crypto-tracker-app.git)
+   git clone https://github.com/emanuele400tt/crypto-tracker-app.git
 2. Installa le dipendenze 
     ```bash
     flutter pub get
@@ -113,7 +113,7 @@ Un'applicazione mobile dal design pulito e responsivo, sviluppata con Flutter e 
 
 ## 📌 Stato del Progetto
 
-> **Avviso di Manutenzione:** Questa applicazione è un progetto *showcase* sviluppato a scopo di portfolio e dimostrazione tecnica. Il codice sorgente è completo e l'app è funzionante, ma il repository **non è attivamente mantenuto**. Eventuali modifiche future da parte dei provider delle API esterne (es. i servizi meteo) potrebbero influire sul caricamento dei dati. Sentiti libero di esplorare il codice o testare l'app tramite le release!
+> **Avviso di Manutenzione:** Questa applicazione è un progetto *showcase* sviluppato a scopo di portfolio e dimostrazione tecnica. Il codice sorgente è completo e l'app è funzionante, ma il repository **non è attivamente mantenuto**. Eventuali modifiche future da parte dei provider delle API esterne (es. CoinGecko) potrebbero influire sul caricamento dei dati. Sentiti libero di esplorare il codice o testare l'app tramite le release!
 
 ---
     
