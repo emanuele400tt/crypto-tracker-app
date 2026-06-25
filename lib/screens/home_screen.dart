@@ -112,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: isDark ? Colors.white54 : Colors.black54,
                 ),
                 filled: true,
-                fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+                fillColor: Theme.of(context).cardColor,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(16),
                   borderSide: BorderSide.none,

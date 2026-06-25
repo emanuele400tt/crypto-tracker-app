@@ -33,7 +33,7 @@ class CryptoCard extends StatelessWidget {
         : Colors.redAccent;
 
     return Card(
-      color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+      color: Theme.of(context).cardColor,
       margin: const EdgeInsets.only(bottom: 12),
       elevation: isDark ? 0 : 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),

@@ -64,9 +64,21 @@ You can test the application directly on your device without having to build the
    *⚠️ Warning: Do not move the single executable file outside of its folder, as it requires the adjacent libraries and assets to run properly.*
 
 ### 🌐 Web Version
-*(Se hai caricato i file su un hosting o su GitHub Pages usa questa riga:)*
 Don't want to download anything? You can try the app directly from your browser! 
 👉 **[Click here to launch the Live Demo](https://emanuele400tt.github.io/crypto-tracker-app/)**
+Alternatively:
+1. Download the `crypto-tracker-web.zip` archive and extract the folder.
+2. *⚠️ Warning:* Due to modern browser security restrictions (CORS policy), you cannot run the app by simply double-clicking the `index.html` file. You need to serve it via a local web server (e.g., using the *Live Server* extension in VS Code or a Python HTTP server) pointing to the extracted folder.
+### Linux Example
+
+From the directory where `crypto-tracker-web.zip` was extracted:
+
+1. Run:
+
+   ```bash
+   python3 -m http.server 8000
+
+2. Open `http://localhost:8000` in your browser.
 
 
 # Versione Italiana
@@ -121,7 +133,19 @@ Puoi testare l'applicazione direttamente sul tuo dispositivo senza dover compila
    *⚠️ Attenzione: non spostare il singolo file eseguibile al di fuori di quella cartella, poiché necessita delle librerie e degli assets adiacenti per funzionare correttamente.*
 
 ### 🌐 Versione Web
-*(Se hai caricato i file su un hosting o su GitHub Pages usa questa riga:)*
 Non vuoi scaricare nulla? Puoi provare l'interfaccia dell'app direttamente dal tuo browser! 
 👉 **[Clicca qui per avviare la Live Demo](https://emanuele400tt.github.io/crypto-tracker-app/)**
+Altrimenti:
+1. Scarica l'archivio `crypto-tracker-web.zip` ed estrai la cartella.
+2. *⚠️ Attenzione:* A causa delle restrizioni di sicurezza dei browser moderni (CORS), non è possibile eseguire l'app facendo semplicemente doppio click sul file `index.html`. È necessario avviare un server locale (ad es. tramite l'estensione *Live Server* su VS Code o con un server HTTP Python) puntando alla cartella estratta.
+
+### Esempio Linux:
+Dalla cartella in cui si è estratto `crypto-tracker-web.zip`
+
+1. Esegui:
+
+     ```bash
+        python3 -m http.server 8000
+
+2. Apri `http://localhost:8000` nel tuo browser.
 
